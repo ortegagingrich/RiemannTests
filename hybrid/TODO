@@ -1,4 +1,3 @@
 TODO:
-	1) Make diagram of full solver cases
-	2) Have program keep track of cases; record to array
-	3) Figure out how to plot cases (maybe color)
+	1) Entropy Fix
+	2) Begin looking at 2D Geoclaw code
