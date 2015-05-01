@@ -1,0 +1,28 @@
+#Copies driver files to a new directory, then executes them
+#Input: $1: make command $2: name of run (otherwise will just make generic run folder)
+
+mkdir _run_$2
+
+echo "Copying driver files into "_runs_$2
+
+cp Makefile _run_$2/
+cp *.py _run_$2/
+cp *.f _run_$2/
+cp *.f90 _run_$2/
+
+
+
+cd _run_$2
+
+echo "Executing command: make "$1
+make $1
+
+echo "Copying driver files used into archive for easy retrieval"
+
+mkdir _driver_archive/
+cp Makefile _driver_archive/
+cp *.py _driver_archive/
+cp *.f _driver_archive/
+cp *.f90 _driver_archive/
+
+cd ..
