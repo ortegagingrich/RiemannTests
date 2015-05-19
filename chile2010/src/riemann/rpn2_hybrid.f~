@@ -1,6 +1,7 @@
 c======================================================================
        subroutine rpn2(ixy,maxm,meqn,mwaves,maux,mbc,mx,
-     &                 ql,qr,auxl,auxr,fwave,s,amdq,apdq)
+     &                 ql,qr,auxl,auxr,fwave,s,amdq,apdq,
+     &					roesolves,fullsolves)
 c======================================================================
 c
 c Solves normal Riemann problems for the 2D SHALLOW WATER equations
@@ -50,6 +51,9 @@ c
       double precision  amdq(meqn,1-mbc:maxm+mbc)
       double precision  auxl(maux,1-mbc:maxm+mbc)
       double precision  auxr(maux,1-mbc:maxm+mbc)
+      
+      !for debugging only
+      integer roesolves,fullsolves
 
       !local only
       integer m,i,mw,maxiter,mu,nv
@@ -69,8 +73,7 @@ c
       !local: mod
       double precision :: deeptol
       
-      deeptol=1.d-1
-      
+      deeptol=1.d2
       
       
 c        !set normal direction
@@ -130,8 +133,24 @@ c        !set normal direction
          
          !if water is sufficiently deep use the roe solver, otherwise the full
          if((hL.ge.deeptol.and.hR.ge.deeptol)) then
-         	!insert call to roe solver here
+         	!record this as a roe solve
+         	!roesolves=roesolves+1
+         	
+         	!call the steady state roe solver
+         	call shallow_roe_jog(hL,hR,huL,huR,hvL,hvR,bL,bR,sw,fw)
+         	
+         	!copy results into wave speed and fwave arrays
+         	do mw=1,3
+         		s(mw,i)=sw(mw)
+         		fwave(1,mw,i)=fw(1,mw)
+         		fwave(mu,mw,i)=fw(2,mw)
+         		fwave(nv,mw,i)=fw(3,mw)
+         	enddo
+         	
          	go to 30
+         else
+         	!record this as a full solve
+         	!fullsolves=fullsolves+1
          endif
          
 

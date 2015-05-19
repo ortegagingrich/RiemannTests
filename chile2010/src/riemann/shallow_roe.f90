@@ -19,7 +19,7 @@ subroutine shallow_roe_jog(hL,hR,huL,huR,hvL,hvR,bL,bR,swroe,fwroe)
 	integer m
 	double precision :: uL,uR,vL,vR,deltah,deltahu,deltahv
 	double precision :: ghbar,lamlam,ssjump
-	double precision :: uhat,chat,s1,s2,s3,a1,a2,a3
+	double precision :: uhat,vhat,chat,s1,s2,s3,a1,a2,a3
 	double precision :: shl,shr,o2ch
 	double precision :: lamL1,lamR2,lamM1,lamM2,huM,hM,beta,trans
 	double precision :: g
@@ -40,26 +40,40 @@ subroutine shallow_roe_jog(hL,hR,huL,huR,hvL,hvR,bL,bR,swroe,fwroe)
 	shl=sqrt(hL)
 	shr=sqrt(hR)
 	uhat=(shl*uL+shr*uR)/(shl+shr)
+	vhat=(shl*vL+shr*vR)/(shl+shr)
 	chat=sqrt(ghbar)
 	
 	!wave speeds
 	s1=uhat-chat
-	s2=uhat+chat
+	s2=uhat
+	s3=uhat+chat
 	
 	!decompose jump vector
 	deltah=hR-hL-ssjump
 	deltahu=huR-huL
+	deltahv=hvR-hvL
 	o2ch=0.5d0/chat
 	a1=o2ch*(-deltahu+s2*deltah)
-	a2=o2ch*( deltahu-s1*deltah)
+	a2=deltahv-vhat*deltah
+	a3=o2ch*( deltahu-s1*deltah)
 	
 	!fwaves
 	fwroe(1,1)=s1*a1
 	fwroe(2,1)=fwroe(1,1)*s1
-	fwroe(1,2)=s2*a2
-	fwroe(2,2)=fwroe(1,2)*s2
+	fwroe(3,1)=fwroe(1,1)*vhat
+	
+	fwroe(1,3)=s3*a3
+	fwroe(2,3)=fwroe(1,3)*s3
+	fwroe(3,3)=fwroe(1,3)*vhat
+	
+	fwroe(1,2)=0.d0
+	fwroe(2,2)=0.d0
+	!fwroe(3,2)=s2*a2
+	fwroe(3,2)=hR*uR*vR-hL*uL*vL-fwroe(3,1)-fwroe(3,3)
+	
 	swroe(1)=s1
 	swroe(2)=s2
+	swroe(3)=s3
 	
 	
 	

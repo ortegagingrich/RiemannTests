@@ -78,8 +78,11 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
     
     ! for timing
     double precision :: normaltime,transversetime,controltime
-    normaltime=0.d0;
-    transversetime=0.d0;
+    integer :: roesolves,fullsolves
+    normaltime=0.d0
+    transversetime=0.d0
+    roesolves=0
+    fullsolves=0
     
     
 
@@ -121,7 +124,7 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
         ! Compute modifications fadd and gadd to fluxes along this slice:
         call flux2(1,maxm,meqn,maux,mbc,mx,q1d,dtdx1d,aux1,aux2,aux3, &
                    faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2, &
-                   normaltime,transversetime,controltime) 
+                   normaltime,transversetime,controltime,roesolves,fullsolves) 
 
         cflgrid = max(cflgrid,cfl1d)
         ! write(53,*) 'x-sweep: ',cfl1d,cflgrid
@@ -165,7 +168,7 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
         ! Compute modifications fadd and gadd to fluxes along this slice
         call flux2(2,maxm,meqn,maux,mbc,my,q1d,dtdy1d,aux1,aux2,aux3, &
                    faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2, &
-                   normaltime,transversetime,controltime)
+                   normaltime,transversetime,controltime,roesolves,fullsolves)
 
         cflgrid = max(cflgrid,cfl1d)
         ! write(53,*) 'y-sweep: ',cfl1d,cflgrid
@@ -181,10 +184,12 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
     end do
     
     !print time taken by normal and transverse solvers
-    print *,"dx=",dx
-    print *,"rpn1 time: ",normaltime
-    print *,"rpt2 time: ",transversetime
-    print *,"control time:",controltime
+    !print *,"dx=",dx
+    !print *,"rpn1 time: ",normaltime
+    !print *,"rpt2 time: ",transversetime
+    !print *,"control time:",controltime
+    !print *,"Roe Solves:",roesolves
+    !print *,"Full Solves:",fullsolves
 
     ! Relimit correction fluxes if they drive a cell negative
     if (relimit) then

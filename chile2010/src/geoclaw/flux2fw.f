@@ -4,7 +4,7 @@ c     =====================================================
       subroutine flux2(ixy,maxm,meqn,maux,mbc,mx,
      &                 q1d,dtdx1d,aux1,aux2,aux3,
      &                 faddm,faddp,gaddm,gaddp,cfl1d,
-     &                 rpn2,rpt2,realnt,realtt,realct)
+     &                 rpn2,rpt2,realnt,realtt,realct,nrs,nfs)
 !!     &                 fwave,s,amdq,apdq,rpn2,rpt2)
 c     =====================================================
 c
@@ -106,7 +106,11 @@ c
       dimension  amdq(meqn, 1-mbc:maxm+mbc)
       dimension  apdq(meqn, 1-mbc:maxm+mbc)
 c
+		!for debugging only
+		integer nrs,nfs
+		
       logical limit, relimit
+      
 
       relimit = .false.
 c
@@ -137,7 +141,7 @@ c     ---------------------------------------------------------------------
 c
       call CPU_TIME(st)
       call rpn2(ixy,maxm,meqn,mwaves,maux,mbc,mx,q1d,q1d,
-     &          aux2,aux2,fwave,s,amdq,apdq)
+     &          aux2,aux2,fwave,s,amdq,apdq,nrs,nfs)
       call CPU_TIME(ft)
       realnt=realnt+(ft-st)
 c
