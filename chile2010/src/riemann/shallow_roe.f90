@@ -68,8 +68,8 @@ subroutine shallow_roe_jog(hL,hR,huL,huR,hvL,hvR,bL,bR,swroe,fwroe)
 	
 	fwroe(1,2)=0.d0
 	fwroe(2,2)=0.d0
-	!fwroe(3,2)=s2*a2
-	fwroe(3,2)=hR*uR*vR-hL*uL*vL-fwroe(3,1)-fwroe(3,3)
+	fwroe(3,2)=s2*a2
+	!fwroe(3,2)=hR*uR*vR-hL*uL*vL-fwroe(3,1)-fwroe(3,3)
 	
 	swroe(1)=s1
 	swroe(2)=s2

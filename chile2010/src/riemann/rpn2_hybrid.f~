@@ -71,9 +71,10 @@ c
       
       
       !local: mod
-      double precision :: deeptol
+      double precision :: deeptol,jumptol
       
-      deeptol=1.d2
+      deeptol=1.d3!1.d3
+      jumptol=1.d99!1.d-4
       
       
 c        !set normal direction
@@ -132,7 +133,8 @@ c        !set normal direction
          hvR=ql(nv,i)
          
          !if water is sufficiently deep use the roe solver, otherwise the full
-         if((hL.ge.deeptol.and.hR.ge.deeptol)) then
+         if((hL.ge.deeptol.and.hR.ge.deeptol) 
+     &    .and.(abs(hL-hR).lt.(jumptol*(hL+hR)))) then
          	!record this as a roe solve
          	!roesolves=roesolves+1
          	
@@ -153,7 +155,7 @@ c        !set normal direction
          	!fullsolves=fullsolves+1
          endif
          
-
+         
          !check for wet/dry boundary
          if (hR.gt.drytol) then
             uR=huR/hR
