@@ -227,13 +227,18 @@ c               bL=hstartest+bR
          sL=uL-sqrt(g*hL) ! 1 wave speed of left state
          sR=uR+sqrt(g*hR) ! 2 wave speed of right state
 
-         uhat=(sqrt(g*hL)*uL + sqrt(g*hR)*uR)/(sqrt(g*hR)+sqrt(g*hL)) ! Roe average
+         !uhat=(sqrt(g*hL)*uL + sqrt(g*hR)*uR)/(sqrt(g*hR)+sqrt(g*hL)) ! Roe average
+         uhat=(sqrt(hL)*uL+sqrt(hR*uR))/(sqrt(hR)+sqrt(hL))
          chat=sqrt(g*0.5d0*(hR+hL)) ! Roe average
          sRoe1=uhat-chat ! Roe wave speed 1 wave
          sRoe2=uhat+chat ! Roe wave speed 2 wave
 
          sE1 = min(sL,sRoe1) ! Eindfeldt speed 1 wave
          sE2 = max(sR,sRoe2) ! Eindfeldt speed 2 wave
+         
+         !test
+         !sE1=sRoe1
+         !sE2=sRoe2
 
          !--------------------end initializing...finally----------
          !solve Riemann problem.
@@ -270,7 +275,10 @@ c        !eliminate ghost fluxes for wall
 
  30      continue
       enddo
-
+      
+      
+       !for debug purposes, skip capacity mapping (i.e. assume cartesian grid)
+c      go to 31
 
 c==========Capacity for mapping from latitude longitude to physical space====
         if (mcapa.gt.0) then
@@ -278,7 +286,9 @@ c==========Capacity for mapping from latitude longitude to physical space====
           if (ixy.eq.1) then
              dxdc=(earth_radius*deg2rad)
           else
-             dxdc=earth_radius*cos(auxl(3,i))*deg2rad
+             !dxdc=earth_radius*cos(auxl(3,i))*deg2rad
+             !use cartesian:
+             dxdc=(earth_radius*deg2rad)
           endif
 
           do mw=1,mwaves
@@ -295,7 +305,7 @@ c                endif
         endif
 
 c===============================================================================
-
+  31     continue
 
 c============= compute fluctuations=============================================
          amdq(1:3,:) = 0.d0

@@ -235,6 +235,9 @@ c        !eliminate ghost fluxes for wall
 
  30      continue
       enddo
+      
+      !for debug purposes, skip capacity mapping (i.e. assume cartesian grid)
+c      go to 31
 
 
 c==========Capacity for mapping from latitude longitude to physical space====
@@ -260,7 +263,7 @@ c                endif
         endif
 
 c===============================================================================
-
+  31     continue
 
 c============= compute fluctuations=============================================
          amdq(1:3,:) = 0.d0
