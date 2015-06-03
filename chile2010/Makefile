@@ -23,7 +23,7 @@ RESTART = False
 # Environment variable FC should be set to fortran compiler, e.g. gfortran
 
 # Compiler flags can be specified here or set as an environment variable
-FFLAGS ?=
+FFLAGS = -pg
 
 # ---------------------------------
 # List of sources for this program:
@@ -54,12 +54,12 @@ SOURCES = \
   $(GEOLIB)/topointegral.f \
   $(GEOLIB)/bilinearintegral.f \
   $(GEOLIB)/stepgrid.f \
-  src/riemann/rpn2_geoclaw.f \
+  src/riemann/rpn2_geoclaw_roedeep.f \
   src/riemann/rpt2_geoclaw.f \
   $(CLAW)/riemann/src/geoclaw_riemann_utils.f \
   $(GEOLIB)/src2.f90 \
   $(GEOLIB)/src1d.f90 \
-  $(GEOLIB)/step2.f90 \
+  $(GEOLIBMOD)/step2.f90 \
   $(GEOLIB)/flux2fw.f \
   $(GEOLIB)/qad.f \
   $(GEOLIB)/valout.f \
@@ -190,3 +190,7 @@ nearall:
 	$(MAKE) topo
 	$(MAKE) .plots
 
+gprof:
+	$(MAKE) topo
+	$(MAKE) .output
+	gprof xgeoclaw _output/gmon.out

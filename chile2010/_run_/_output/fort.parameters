@@ -1,0 +1,25 @@
+  
+ --------------------------------------------
+ REGIONS:
+ -----------
+  
+ --------------------------------------------
+ SETFGMAX:
+ -----------
+ FG_NUM_VAL =            1
+ FG_num_fgrids =            0
+  
+ Running amrclaw with parameter values:
+  
+  
+ --------------------------------------------
+ SETFIXEDGRIDS:
+ -----------
+   mfgrids =            0
+   No fixed grids specified for output
+  
+ --------------------------------------------
+  
+    rest =  F    (restart?)
+    start time =    0.0000000000000000     
+  

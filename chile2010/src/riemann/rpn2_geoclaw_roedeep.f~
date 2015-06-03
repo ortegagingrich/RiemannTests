@@ -71,10 +71,21 @@ c
       double precision deldelh,deldelphi
       double precision beta1,beta2,beta3,del1,del2,del3
       double precision roe_depth
+      
+      
+      
+      
+      !common block for my testing purposes
+      integer totalcount,roecount,fullcount
+      common /counttype/ totalcount,roecount,fullcount
+      
 
 
       !loop through Riemann problems at each grid cell
       do i=2-mbc,mx+mbc
+         
+         !COUNTING
+         totalcount=totalcount+1
 
 !-----------------------Initializing-----------------------------------
          !inform of a bad riemann problem from the start
@@ -213,7 +224,7 @@ c               bL=hstartest+bR
          !solve Riemann problem.
     
 
-       roe_depth = 10.0!100.d0    
+       roe_depth = 2.0!100.d0    
        if ((ql(1,i)<roe_depth) .or. (qr(1,i-1)<roe_depth)) then
 
          ! use augmented solver only if depth is shallow on one side:

@@ -54,7 +54,6 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
     real(kind=8) :: dtdx1d(1-mbc:maxm+mbc)
     real(kind=8) :: dtdy1d(1-mbc:maxm+mbc)
     
-    
  !   real(kind=8) ::  wave(meqn, mwaves, 1-mbc:maxm+mbc)
  !   real(kind=8) ::     s(mwaves, 1-mbc:maxm + mbc)
  !   real(kind=8) ::  amdq(meqn,1-mbc:maxm + mbc)
@@ -75,14 +74,17 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
     logical, parameter :: relimit = .false.
     
     
+    !Common block for recording how many roe solves and how many full solves were done
+    integer totalcount,roecount,fullcount
+    common /counttype/ totalcount,roecount,fullcount
+    !output the number of roe solves for the previous grid
+    print *,'Roe solves: ',roecount,' out of ',totalcount,' total solves.',&
+    		'Fraction:',roecount/(1.d0+totalcount)
+    !reset counts for the present grid
+    totalcount=0
+    roecount=0
+    fullcount=0
     
-    ! for timing
-    double precision :: normaltime,transversetime,controltime
-    integer :: roesolves,fullsolves
-    normaltime=0.d0
-    transversetime=0.d0
-    roesolves=0
-    fullsolves=0
     
     
 
@@ -94,7 +96,6 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
     fp = 0.d0
     gm = 0.d0
     gp = 0.d0
-    
 
     ! ==========================================================================
     ! Perform X-Sweeps
@@ -123,8 +124,7 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
 
         ! Compute modifications fadd and gadd to fluxes along this slice:
         call flux2(1,maxm,meqn,maux,mbc,mx,q1d,dtdx1d,aux1,aux2,aux3, &
-                   faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2, &
-                   normaltime,transversetime,controltime,roesolves,fullsolves) 
+                   faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2) 
 
         cflgrid = max(cflgrid,cfl1d)
         ! write(53,*) 'x-sweep: ',cfl1d,cflgrid
@@ -167,8 +167,7 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
         
         ! Compute modifications fadd and gadd to fluxes along this slice
         call flux2(2,maxm,meqn,maux,mbc,my,q1d,dtdy1d,aux1,aux2,aux3, &
-                   faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2, &
-                   normaltime,transversetime,controltime,roesolves,fullsolves)
+                   faddm,faddp,gaddm,gaddp,cfl1d,rpn2,rpt2)
 
         cflgrid = max(cflgrid,cfl1d)
         ! write(53,*) 'y-sweep: ',cfl1d,cflgrid
@@ -182,14 +181,6 @@ subroutine step2(maxm,meqn,maux,mbc,mx,my, &
         fp(:,i+1,1:my+1) = fp(:,i+1,1:my+1) + gaddp(:,1:my+1,2)
 
     end do
-    
-    !print time taken by normal and transverse solvers
-    print *,"dx=",dx
-    print *,"rpn1 time: ",normaltime
-    print *,"rpt2 time: ",transversetime
-    print *,"control time:",controltime
-    !print *,"Roe Solves:",roesolves
-    !print *,"Full Solves:",fullsolves
 
     ! Relimit correction fluxes if they drive a cell negative
     if (relimit) then

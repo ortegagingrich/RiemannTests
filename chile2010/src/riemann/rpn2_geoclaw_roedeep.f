@@ -71,10 +71,21 @@ c
       double precision deldelh,deldelphi
       double precision beta1,beta2,beta3,del1,del2,del3
       double precision roe_depth
+      
+      
+      
+      
+      !common block for my testing purposes
+      integer totalcount,roecount,fullcount
+      common /counttype/ totalcount,roecount,fullcount
+      
 
 
       !loop through Riemann problems at each grid cell
       do i=2-mbc,mx+mbc
+         
+         !COUNTING
+         totalcount=totalcount+1
 
 !-----------------------Initializing-----------------------------------
          !inform of a bad riemann problem from the start
@@ -251,6 +262,9 @@ c        !eliminate ghost fluxes for wall
       else
 
           ! simple f-wave Roe solver if depth > roe_depth on both sides:
+          
+          !COUNT
+          roecount=roecount+1
     
           !determine del vectors
           delh = hR-hL
