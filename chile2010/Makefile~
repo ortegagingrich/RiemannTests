@@ -18,8 +18,7 @@ OUTDIR = _output               # Directory for output
 SETPLOT_FILE = setplot.py      # File containing function to set plots
 PLOTDIR = _plots               # Directory for plots
 
-OVERWRITE ?= True                   # False ==> make a copy of OUTDIR first
-RESTART ?= False                    # Should = clawdata.restart in setrun
+RESTART = False
 
 # Environment variable FC should be set to fortran compiler, e.g. gfortran
 
@@ -55,14 +54,13 @@ SOURCES = \
   $(GEOLIB)/topointegral.f \
   $(GEOLIB)/bilinearintegral.f \
   $(GEOLIB)/stepgrid.f \
-  src/riemann/rpn2_hybrid.f \
+  src/riemann/rpn2_geoclaw_roedeep.f \
   src/riemann/rpt2_geoclaw.f \
-  src/riemann/geoclaw_riemann_utils.f \
-  src/riemann/shallow_roe.f90 \
+  $(CLAW)/riemann/src/geoclaw_riemann_utils.f \
   $(GEOLIB)/src2.f90 \
   $(GEOLIB)/src1d.f90 \
-  $(GEOLIBMOD)/step2.f90 \
-  $(GEOLIBMOD)/flux2fw.f \
+  $(GEOLIB)/step2.f90 \
+  $(GEOLIB)/flux2fw.f \
   $(GEOLIB)/qad.f \
   $(GEOLIB)/valout.f \
   $(GEOLIB)/filval.f90 \
@@ -89,7 +87,7 @@ SOURCES = \
   $(GEOLIB)/amr2.f90 \
   $(GEOLIB)/fgmax_read.f90 \
   $(GEOLIB)/fgmax_frompatch.f90 \
-  $(GEOLIB)/fgmax_interpolate0.f90 \
+  $(GEOLIB)/fgmax_interpolate.f90 \
   $(GEOLIB)/fgmax_values.f90 \
   $(GEOLIB)/fgmax_finalize.f90 \
   $(AMRLIB)/quick_sort1.f \
@@ -107,6 +105,7 @@ SOURCES = \
   $(AMRLIB)/prepbigstep.f \
   $(AMRLIB)/bufnst2.f \
   $(AMRLIB)/flagger.f \
+  $(AMRLIB)/flagregions.f \
   $(AMRLIB)/errf1.f \
   $(AMRLIB)/fixcapaq.f \
   $(AMRLIB)/flglvl2.f \
@@ -178,21 +177,16 @@ SOURCES = \
 include $(CLAWMAKE)
 
 # Construct the topography data
-.PHONY: topo all nearall
-topo: 
+.PHONY: topo all
+topo:
 	python maketopo.py
 
-all:
+all: 
 	$(MAKE) topo
-	python make_fgmax.py
-	$(MAKE) .output
-	python plot_fgmax.py
-	$(MAKE) plots
+	$(MAKE) .plots
 	$(MAKE) .htmls
 
 nearall:
 	$(MAKE) topo
-	python make_fgmax.py
-	$(MAKE) .output
-	python plot_fgmax.py
-	$(MAKE) plots
+	$(MAKE) .plots
+

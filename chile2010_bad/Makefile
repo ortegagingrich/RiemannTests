@@ -18,12 +18,14 @@ OUTDIR = _output               # Directory for output
 SETPLOT_FILE = setplot.py      # File containing function to set plots
 PLOTDIR = _plots               # Directory for plots
 
-RESTART = False
+OVERWRITE ?= True                   # False ==> make a copy of OUTDIR first
+RESTART ?= False                    # Should = clawdata.restart in setrun
 
 # Environment variable FC should be set to fortran compiler, e.g. gfortran
 
 # Compiler flags can be specified here or set as an environment variable
-FFLAGS ?=
+FFLAGS ?= -O2 -fopenmp
+OMP_NUM_THREADS =4
 
 # ---------------------------------
 # List of sources for this program:
@@ -48,19 +50,20 @@ MODULES = \
 
 SOURCES = \
   $(GEOLIB)/setprob.f90 \
-  $(GEOLIB)/qinit.f90 \
+  $(GEOLIBMOD)/qinit.f90 \
   $(GEOLIB)/topo_update.f90 \
   $(GEOLIB)/cellgridintegrate2.f \
   $(GEOLIB)/topointegral.f \
   $(GEOLIB)/bilinearintegral.f \
   $(GEOLIB)/stepgrid.f \
-  src/riemann/rpn2_geoclaw.f \
+  src/riemann/rpn2_hybrid.f \
   src/riemann/rpt2_geoclaw.f \
-  $(CLAW)/riemann/src/geoclaw_riemann_utils.f \
+  src/riemann/geoclaw_riemann_utils.f \
+  src/riemann/shallow_roe.f90 \
   $(GEOLIB)/src2.f90 \
   $(GEOLIB)/src1d.f90 \
-  $(GEOLIB)/step2.f90 \
-  $(GEOLIB)/flux2fw.f \
+  $(GEOLIBMOD)/step2.f90 \
+  $(GEOLIBMOD)/flux2fw.f \
   $(GEOLIB)/qad.f \
   $(GEOLIB)/valout.f \
   $(GEOLIB)/filval.f90 \
@@ -71,7 +74,7 @@ SOURCES = \
   $(AMRLIB)/intfil.f \
   $(GEOLIB)/bc2amr.f \
   $(GEOLIB)/update.f \
-  $(GEOLIB)/setaux.f90 \
+  $(GEOLIBMOD)/setaux.f90 \
   $(GEOLIB)/flag2refine2.f90  \
   $(AMRLIB)/flagregions2.f90  \
   $(GEOLIB)/allowflag.f90  \
@@ -87,7 +90,7 @@ SOURCES = \
   $(GEOLIB)/amr2.f90 \
   $(GEOLIB)/fgmax_read.f90 \
   $(GEOLIB)/fgmax_frompatch.f90 \
-  $(GEOLIB)/fgmax_interpolate.f90 \
+  $(GEOLIB)/fgmax_interpolate0.f90 \
   $(GEOLIB)/fgmax_values.f90 \
   $(GEOLIB)/fgmax_finalize.f90 \
   $(AMRLIB)/quick_sort1.f \
@@ -105,7 +108,6 @@ SOURCES = \
   $(AMRLIB)/prepbigstep.f \
   $(AMRLIB)/bufnst2.f \
   $(AMRLIB)/flagger.f \
-  $(AMRLIB)/flagregions.f \
   $(AMRLIB)/errf1.f \
   $(AMRLIB)/fixcapaq.f \
   $(AMRLIB)/flglvl2.f \
@@ -177,16 +179,21 @@ SOURCES = \
 include $(CLAWMAKE)
 
 # Construct the topography data
-.PHONY: topo all
-topo:
+.PHONY: topo all nearall
+topo: 
 	python maketopo.py
 
-all: 
+all:
 	$(MAKE) topo
-	$(MAKE) .plots
+	python make_fgmax.py
+	$(MAKE) .output
+	python plot_fgmax.py
+	$(MAKE) plots
 	$(MAKE) .htmls
 
 nearall:
 	$(MAKE) topo
-	$(MAKE) .plots
-
+	python make_fgmax.py
+	$(MAKE) .output
+	python plot_fgmax.py
+	$(MAKE) plots

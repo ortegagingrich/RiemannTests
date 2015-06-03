@@ -1,0 +1,315 @@
+Copying driver files into _runs_full
+Executing command: make nearall
+make topo
+make[1]: Entering directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+python maketopo.py
+Skipping http://www.geoclaw.org/topo/etopo/etopo10min120W60W60S0S.asc 
+  because file already exists: /storage/Software_Development/clawpack/geoclaw/scratch/etopo10min120W60W60S0S.asc
+Mw =  8.92090917611
+*** Not regenerating dtopo file (already exists): /storage/Software_Development/clawpack/geoclaw/scratch/dtopo_usgs100227.tt3
+make[1]: Leaving directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+make .plots
+make[1]: Entering directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+gfortran -c src/riemann/rpn2_geoclaw.f 					  -I/storage/Software_Development/clawpack/amrclaw/src/2d/ -I/storage/Software_Development/clawpack/geoclaw/src/2d/shallow/ -I/storage/Software_Development/Riemann/chile2010/_run_full/  -O2 -fopenmp -o src/riemann/rpn2_geoclaw.o
+gfortran -c src/riemann/rpt2_geoclaw.f 					  -I/storage/Software_Development/clawpack/amrclaw/src/2d/ -I/storage/Software_Development/clawpack/geoclaw/src/2d/shallow/ -I/storage/Software_Development/Riemann/chile2010/_run_full/  -O2 -fopenmp -o src/riemann/rpt2_geoclaw.o
+gfortran     /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/utility_module.o /storage/Software_Development/clawpack/amrclaw/src/2d/amr_module.o /storage/Software_Development/clawpack/amrclaw/src/2d/regions_module.o /storage/Software_Development/clawpack/amrclaw/src/2d/gauges_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/geoclaw_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/topo_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/qinit_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/refinement_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fixedgrids_module.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_module.o     /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/setprob.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/qinit.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/topo_update.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/cellgridintegrate2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/topointegral.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/bilinearintegral.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/stepgrid.o src/riemann/rpn2_geoclaw.o src/riemann/rpt2_geoclaw.o /storage/Software_Development/clawpack/riemann/src/geoclaw_riemann_utils.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/src2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/src1d.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/step2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/flux2fw.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/qad.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/valout.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/filval.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/filpatch.o /storage/Software_Development/clawpack/amrclaw/src/2d/prefilp.o /storage/Software_Development/clawpack/amrclaw/src/2d/trimbd.o /storage/Software_Development/clawpack/amrclaw/src/2d/bound.o /storage/Software_Development/clawpack/amrclaw/src/2d/intfil.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/bc2amr.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/update.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/setaux.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/flag2refine2.o /storage/Software_Development/clawpack/amrclaw/src/2d/flagregions2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/allowflag.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/b4step2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/dumpgauge.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/upbnd.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/tick.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/setgrd.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/gfixup.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/ginit.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/getmaxspeed.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/advanc.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/amr2.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_read.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_frompatch.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_interpolate.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_values.o /storage/Software_Development/clawpack/geoclaw/src/2d/shallow/fgmax_finalize.o /storage/Software_Development/clawpack/amrclaw/src/2d/quick_sort1.o /storage/Software_Development/clawpack/amrclaw/src/2d/estdt.o /storage/Software_Development/clawpack/amrclaw/src/2d/check4nans.o /storage/Software_Development/clawpack/amrclaw/src/2d/spest2.o /storage/Software_Development/clawpack/amrclaw/src/2d/init_iflags.o /storage/Software_Development/clawpack/amrclaw/src/2d/igetsp.o /storage/Software_Development/clawpack/amrclaw/src/2d/reclam.o /storage/Software_Development/clawpack/amrclaw/src/2d/birect.o /storage/Software_Development/clawpack/amrclaw/src/2d/cleanup.o /storage/Software_Development/clawpack/amrclaw/src/2d/colate2.o /storage/Software_Development/clawpack/amrclaw/src/2d/errest.o /storage/Software_Development/clawpack/amrclaw/src/2d/prepregstep.o /storage/Software_Development/clawpack/amrclaw/src/2d/prepbigstep.o /storage/Software_Development/clawpack/amrclaw/src/2d/bufnst2.o /storage/Software_Development/clawpack/amrclaw/src/2d/flagger.o /storage/Software_Development/clawpack/amrclaw/src/2d/flagregions.o /storage/Software_Development/clawpack/amrclaw/src/2d/errf1.o /storage/Software_Development/clawpack/amrclaw/src/2d/fixcapaq.o /storage/Software_Development/clawpack/amrclaw/src/2d/flglvl2.o /storage/Software_Development/clawpack/amrclaw/src/2d/fluxad.o /storage/Software_Development/clawpack/amrclaw/src/2d/fluxsv.o /storage/Software_Development/clawpack/amrclaw/src/2d/grdfit2.o /storage/Software_Development/clawpack/amrclaw/src/2d/moment.o /storage/Software_Development/clawpack/amrclaw/src/2d/nestck2.o /storage/Software_Development/clawpack/amrclaw/src/2d/prepc.o /storage/Software_Development/clawpack/amrclaw/src/2d/prepf.o /storage/Software_Development/clawpack/amrclaw/src/2d/projec2.o /storage/Software_Development/clawpack/amrclaw/src/2d/signs.o /storage/Software_Development/clawpack/amrclaw/src/2d/findcut.o /storage/Software_Development/clawpack/amrclaw/src/2d/smartbis.o /storage/Software_Development/clawpack/amrclaw/src/2d/putnod.o /storage/Software_Development/clawpack/amrclaw/src/2d/putsp.o /storage/Software_Development/clawpack/amrclaw/src/2d/regrid.o /storage/Software_Development/clawpack/amrclaw/src/2d/setuse.o /storage/Software_Development/clawpack/amrclaw/src/2d/stst1.o /storage/Software_Development/clawpack/amrclaw/src/2d/nodget.o /storage/Software_Development/clawpack/amrclaw/src/2d/basic.o /storage/Software_Development/clawpack/amrclaw/src/2d/outval.o /storage/Software_Development/clawpack/amrclaw/src/2d/copysol.o /storage/Software_Development/clawpack/amrclaw/src/2d/outvar.o /storage/Software_Development/clawpack/amrclaw/src/2d/outmsh.o /storage/Software_Development/clawpack/amrclaw/src/2d/outtre.o /storage/Software_Development/clawpack/amrclaw/src/2d/domain.o /storage/Software_Development/clawpack/amrclaw/src/2d/cellave.o /storage/Software_Development/clawpack/amrclaw/src/2d/fdisc.o /storage/Software_Development/clawpack/amrclaw/src/2d/fss.o /storage/Software_Development/clawpack/amrclaw/src/2d/zeroin.o /storage/Software_Development/clawpack/amrclaw/src/2d/setflags.o /storage/Software_Development/clawpack/amrclaw/src/2d/shiftset2.o /storage/Software_Development/clawpack/amrclaw/src/2d/conck.o /storage/Software_Development/clawpack/amrclaw/src/2d/domshrink.o /storage/Software_Development/clawpack/amrclaw/src/2d/domprep.o /storage/Software_Development/clawpack/amrclaw/src/2d/domup.o /storage/Software_Development/clawpack/amrclaw/src/2d/domcopy.o /storage/Software_Development/clawpack/amrclaw/src/2d/setdomflags.o /storage/Software_Development/clawpack/amrclaw/src/2d/setIndices.o /storage/Software_Development/clawpack/amrclaw/src/2d/coarseGridFlagSet.o /storage/Software_Development/clawpack/amrclaw/src/2d/addflags.o /storage/Software_Development/clawpack/amrclaw/src/2d/baseCheck.o /storage/Software_Development/clawpack/amrclaw/src/2d/drivesort.o /storage/Software_Development/clawpack/amrclaw/src/2d/flagcheck.o /storage/Software_Development/clawpack/amrclaw/src/2d/domgrid.o /storage/Software_Development/clawpack/amrclaw/src/2d/setPhysBndryFlags.o /storage/Software_Development/clawpack/amrclaw/src/2d/griddomup.o /storage/Software_Development/clawpack/amrclaw/src/2d/griddomcopy.o /storage/Software_Development/clawpack/amrclaw/src/2d/griddomshrink.o /storage/Software_Development/clawpack/amrclaw/src/2d/coarsen.o /storage/Software_Development/clawpack/amrclaw/src/2d/auxcoarsen.o /storage/Software_Development/clawpack/amrclaw/src/2d/intcopy.o /storage/Software_Development/clawpack/amrclaw/src/2d/preintcopy.o /storage/Software_Development/clawpack/amrclaw/src/2d/icall.o /storage/Software_Development/clawpack/amrclaw/src/2d/preicall.o /storage/Software_Development/clawpack/amrclaw/src/2d/inlinelimiter.o /storage/Software_Development/clawpack/amrclaw/src/2d/cstore.o /storage/Software_Development/clawpack/amrclaw/src/2d/saveqc.o /storage/Software_Development/clawpack/amrclaw/src/2d/check.o /storage/Software_Development/clawpack/amrclaw/src/2d/restrt.o /storage/Software_Development/clawpack/amrclaw/src/2d/opendatafile.o /storage/Software_Development/clawpack/amrclaw/src/2d/init_alloc.o /storage/Software_Development/clawpack/amrclaw/src/2d/restrt_alloc.o /storage/Software_Development/clawpack/amrclaw/src/2d/resize_alloc.o   -I/storage/Software_Development/clawpack/amrclaw/src/2d/ -I/storage/Software_Development/clawpack/geoclaw/src/2d/shallow/ -I/storage/Software_Development/Riemann/chile2010/_run_full/  -O2 -fopenmp -o xgeoclaw                 
+make data -f  Makefile /storage/Software_Development/clawpack/clawutil/src/Makefile.common
+make[2]: Entering directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+rm -f .data
+python setrun.py         geoclaw                  
+touch .data
+make[2]: Nothing to be done for `/storage/Software_Development/clawpack/clawutil/src/Makefile.common'.
+make[2]: Leaving directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+make output -f  Makefile /storage/Software_Development/clawpack/clawutil/src/Makefile.common
+make[2]: Entering directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+rm -f .output
+python /storage/Software_Development/clawpack/clawutil/src/python/clawutil/runclaw.py xgeoclaw                  _output                \
+	True False . False False None
+Reading data file: claw.data
+         first 5 lines are comments and will be skipped
+Reading data file: amr.data
+         first 5 lines are comments and will be skipped
+Reading data file: regions.data
+         first 5 lines are comments and will be skipped
+Reading data file: gauges.data
+         first 5 lines are comments and will be skipped
+Reading data file: fgmax.data
+         first 5 lines are comments and will be skipped
+  
+ Running amrclaw ...  
+  
+Reading data file: geoclaw.data
+         first 5 lines are comments and will be skipped
+Reading data file: refinement.data
+         first 5 lines are comments and will be skipped
+Reading data file: dtopo.data
+         first 5 lines are comments and will be skipped
+Reading data file: topo.data
+         first 5 lines are comments and will be skipped
+  
+ Reading topography file  /storage/Software_Development/clawpack/geoclaw/scratch/etopo10min120W60W60S0S.asc                                                                     
+Reading data file: qinit.data
+         first 5 lines are comments and will be skipped
+   qinit_type = 0, no perturbation
+Reading data file: fixed_grids.data
+         first 5 lines are comments and will be skipped
+ Storage allocated...
+there are    1 grids with      900 cells at level   1
+   Setting initial dt to   0.20000000000000001     
+  max threads set to            1
+  
+ Done reading data, starting computation ...  
+  
+ Total mass at initial time:    1.0575487000653194E+017
+AMRCLAW: Frame    0 output files done at time t = 0.000000D+00
+
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.200000E+00
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.400000E+00
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.600000E+00
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.800000E+00
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.100000E+01
+ AMRCLAW: level  1  CFL = .415E-03  dt = 0.2000E+00  final t = 0.120000E+01
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.362517E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.723834E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.108515E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.144647E+04
+ AMRCLAW: level  1  CFL = .734E+00  dt = 0.3535E+03  final t = 0.180000E+04
+AMRCLAW: Frame    1 output files done at time t = 0.180000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.216132E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.252263E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.288395E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.324527E+04
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.360000E+04
+AMRCLAW: Frame    2 output files done at time t = 0.360000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.396132E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.432263E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.468395E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.504527E+04
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.540000E+04
+AMRCLAW: Frame    3 output files done at time t = 0.540000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.576132E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.612263E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.648395E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.684527E+04
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.720000E+04
+AMRCLAW: Frame    4 output files done at time t = 0.720000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.756132E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.792263E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.828395E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.864527E+04
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.900000E+04
+AMRCLAW: Frame    5 output files done at time t = 0.900000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.936132E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.972263E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.100840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.104453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.108000E+05
+AMRCLAW: Frame    6 output files done at time t = 0.108000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.111613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.115226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.118840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.122453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.126000E+05
+AMRCLAW: Frame    7 output files done at time t = 0.126000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.129613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.133226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.136840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.140453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.144000E+05
+AMRCLAW: Frame    8 output files done at time t = 0.144000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.147613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.151226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.154840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.158453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.162000E+05
+AMRCLAW: Frame    9 output files done at time t = 0.162000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.165613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.169226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.172840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.176453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.180000E+05
+AMRCLAW: Frame   10 output files done at time t = 0.180000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.183613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.187226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.190839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.194453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.198000E+05
+AMRCLAW: Frame   11 output files done at time t = 0.198000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.201613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.205226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.208839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.212453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.216000E+05
+AMRCLAW: Frame   12 output files done at time t = 0.216000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.219613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.223226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.226839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.230453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.234000E+05
+AMRCLAW: Frame   13 output files done at time t = 0.234000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.237613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.241226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.244839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.248453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.252000E+05
+AMRCLAW: Frame   14 output files done at time t = 0.252000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.255613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.259226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.262839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.266453E+05
+ ***adjusting timestep for level   3 at t =     0.262839D+05
+     old ntogo dt           2   60.219434855981866     
+     new ntogo dt            3   40.146289903988269     
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.270000E+05
+AMRCLAW: Frame   15 output files done at time t = 0.270000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.273613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.277226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.280840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.284453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.288000E+05
+AMRCLAW: Frame   16 output files done at time t = 0.288000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.291613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.295226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.298840E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.302453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.306000E+05
+AMRCLAW: Frame   17 output files done at time t = 0.306000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.309613E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.313226E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.316839E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3613E+03  final t = 0.320453E+05
+ AMRCLAW: level  1  CFL = .736E+00  dt = 0.3547E+03  final t = 0.324000E+05
+AMRCLAW: Frame   18 output files done at time t = 0.324000D+05
+
+ Done integrating to time    32400.000000000000     
+Total time to solution =      49.53900000 s, using  1 threads
+Total advanc time on level   1 =       0.38300000 s
+Total advanc time on level   2 =       1.71500000 s
+Total advanc time on level   3 =      44.33600000 s
+Total updating   time                  0.14900000 s
+Total valout     time                  1.96600000 s
+
+Total regridding time (clock)          1.02700000 s
+   Total Grdfit     time (clock)           0.38800000 s
+      Total Flglvl  time                      0.38700000 s
+         Total    Flagger     time (clock)           0.36700000 s
+         Total    Bufnst     time (clock)           0.01400000 s
+   Total gfixup     time  (clock)         0.63900000 s
+      Total filval (wall) time            0.63900000 s
+          Total filval (all cores) time           0.63900000 s
+
+Total setaux (all cores) time           6.46700000 s
+
+  integration time, still not counting saveqc
+Total Bound (all levels) wall time            6.96000000 s
+Total stepgrid (all levels) wall time        39.45100000 s
+==> runclaw: Will take data from  /storage/Software_Development/Riemann/chile2010/_run_full
+==> runclaw: Will write output to  /storage/Software_Development/Riemann/chile2010/_run_full/_output
+==> runclaw: Removing all old fort files in  /storage/Software_Development/Riemann/chile2010/_run_full/_output
+
+==> Running with command:
+    /storage/Software_Development/Riemann/chile2010/_run_full/xgeoclaw
+
+==> runclaw: Finished executing
+
+==> runclaw: Done executing /storage/Software_Development/Riemann/chile2010/_run_full/xgeoclaw via clawutil.runclaw.py
+==> runclaw: Output is in  /storage/Software_Development/Riemann/chile2010/_run_full/_output
+make[2]: Nothing to be done for `/storage/Software_Development/clawpack/clawutil/src/Makefile.common'.
+make[2]: Leaving directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+make plots -f  Makefile /storage/Software_Development/clawpack/clawutil/src/Makefile.common
+make[2]: Entering directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+rm -f .plots
+python /storage/Software_Development/clawpack/visclaw/src/python/visclaw/plotclaw.py _output                _plots                setplot.py      
+Importing setplot.setplot from /storage/Software_Development/Riemann/chile2010/_run_full.
+Executed setplot successfully
+Will plot 19 frames numbered: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+Will make 1 figure(s) for each frame, numbered:  [0]
+
+-----------------------------------
+
+
+Creating html pages for figures...
+
+Directory '/storage/Software_Development/Riemann/chile2010/_run_full/_plots' 
+    already exists, files may be overwritten 
+Now making png files for all figures...
+    Reading  Frame 0 at t = 0  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 0 at time t = 0.0
+    Reading  Frame 1 at t = 1800  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 1 at time t = 1800.0
+    Reading  Frame 2 at t = 3600  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 2 at time t = 3600.0
+    Reading  Frame 3 at t = 5400  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 3 at time t = 5400.0
+    Reading  Frame 4 at t = 7200  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 4 at time t = 7200.0
+    Reading  Frame 5 at t = 9000  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 5 at time t = 9000.0
+    Reading  Frame 6 at t = 10800  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 6 at time t = 10800.0
+    Reading  Frame 7 at t = 12600  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 7 at time t = 12600.0
+    Reading  Frame 8 at t = 14400  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 8 at time t = 14400.0
+    Reading  Frame 9 at t = 16200  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 9 at time t = 16200.0
+    Reading  Frame 10 at t = 18000  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 10 at time t = 18000.0
+    Reading  Frame 11 at t = 19800  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 11 at time t = 19800.0
+    Reading  Frame 12 at t = 21600  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 12 at time t = 21600.0
+    Reading  Frame 13 at t = 23400  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 13 at time t = 23400.0
+    Reading  Frame 14 at t = 25200  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 14 at time t = 25200.0
+    Reading  Frame 15 at t = 27000  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 15 at time t = 27000.0
+    Reading  Frame 16 at t = 28800  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 16 at time t = 28800.0
+    Reading  Frame 17 at t = 30600  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 17 at time t = 30600.0
+    Reading  Frame 18 at t = 32400  from outdir = /storage/Software_Development/Riemann/chile2010/_run_full/_output
+Frame 18 at time t = 32400.0
+Reading gauge data from /storage/Software_Development/Riemann/chile2010/_run_full/_output/fort.gauge
+In fort.gauge file, found gauge numbers [32412]
+Read in gauges [32412]
+Found data for Gauge 32412 
+
+-----------------------------------
+
+Creating latex file...
+Directory '/storage/Software_Development/Riemann/chile2010/_run_full/_plots' 
+    already exists, files may be overwritten 
+
+Latex file created:  
+  /storage/Software_Development/Riemann/chile2010/_run_full/_plots/plots.tex
+
+Use pdflatex to create pdf file
+Created JSAnimation for figure 0
+
+--------------------------------------------------------
+
+Point your browser to:
+    file:///storage/Software_Development/Riemann/chile2010/_run_full/_plots/_PlotIndex.html
+make[2]: Nothing to be done for `/storage/Software_Development/clawpack/clawutil/src/Makefile.common'.
+make[2]: Leaving directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+make[1]: Leaving directory `/storage/Software_Development/Riemann/chile2010/_run_full'
+Copying driver files used into archive for easy retrieval

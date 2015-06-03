@@ -92,7 +92,7 @@ def setrun(claw_pkg='geoclaw'):
     clawdata.num_eqn = 3
 
     # Number of auxiliary variables in the aux array (initialized in setaux)
-    clawdata.num_aux = 3
+    clawdata.num_aux = 4
 
     # Index of aux array corresponding to capacity function, if there is one:
     clawdata.capa_index = 2
@@ -128,18 +128,18 @@ def setrun(claw_pkg='geoclaw'):
 
     if clawdata.output_style==1:
         # Output nout frames at equally spaced times up to tfinal:
-        clawdata.num_output_times = 18
-        clawdata.tfinal = 32400.0
-        clawdata.output_t0 = True  # output at initial (or restart) time?
+        clawdata.num_output_times = 20
+        clawdata.tfinal = 4*3600.0
+        clawdata.output_t0 = False  # output at initial (or restart) time?
 
     elif clawdata.output_style == 2:
         # Specify a list of output times.
-        clawdata.output_times = [0.5, 1.0]
+        clawdata.output_times = [30., 60., 300., 600.]
 
     elif clawdata.output_style == 3:
         # Output every iout timesteps with a total of ntot time steps:
         clawdata.output_step_interval = 1
-        clawdata.total_steps = 3
+        clawdata.total_steps = 2
         clawdata.output_t0 = True
         
 
@@ -283,16 +283,16 @@ def setrun(claw_pkg='geoclaw'):
     amrdata.amr_levels_max = 3
 
     # List of refinement ratios at each level (length at least mxnest-1)
-    amrdata.refinement_ratios_x = [2,6]
-    amrdata.refinement_ratios_y = [2,6]
-    amrdata.refinement_ratios_t = [2,6]
+    amrdata.refinement_ratios_x = [4,3]
+    amrdata.refinement_ratios_y = [4,3]
+    amrdata.refinement_ratios_t = [4,3]
 
 
     # Specify type of each aux variable in amrdata.auxtype.
     # This must be a list of length maux, each element of which is one of:
     #   'center',  'capacity', 'xleft', or 'yleft'  (see documentation).
 
-    amrdata.aux_type = ['center','capacity','yleft']
+    amrdata.aux_type = ['center','capacity','yleft','center']
 
 
     # Flag using refinement routine flag2refine rather than richardson error
@@ -323,7 +323,7 @@ def setrun(claw_pkg='geoclaw'):
     amrdata.pprint = False      # proj. of tagged points
     amrdata.rprint = False      # print regridding summary
     amrdata.sprint = False      # space/memory output
-    amrdata.tprint = True#True       # time step reporting each level
+    amrdata.tprint = True       # time step reporting each level
     amrdata.uprint = False      # update/upbnd reporting
     
     # More AMR parameters can be set -- see the defaults in pyclaw/data.py
@@ -334,8 +334,8 @@ def setrun(claw_pkg='geoclaw'):
     rundata.regiondata.regions = []
     # to specify regions of refinement append lines of the form
     #  [minlevel,maxlevel,t1,t2,x1,x2,y1,y2]
-    rundata.regiondata.regions.append([3, 3, 0., 10000., -85,-72,-38,-25])
-    rundata.regiondata.regions.append([3, 3, 8000., 26000., -90,-80,-30,-15])
+    #rundata.regiondata.regions.append([1, 2, 0., 1e9, -360,360,-90,90])
+    rundata.regiondata.regions.append([3, 3, 0., 600., -76,-72,-38,-33])
 
     # ---------------
     # Gauges:
@@ -382,7 +382,7 @@ def setgeo(rundata):
     # Refinement settings
     refinement_data = rundata.refinement_data
     refinement_data.variable_dt_refinement_ratios = True
-    refinement_data.wave_tolerance = 1.e-1
+    refinement_data.wave_tolerance = 1.e-2
     refinement_data.deep_depth = 1e2
     refinement_data.max_level_deep = 3
 
@@ -413,6 +413,14 @@ def setgeo(rundata):
     # for fixed grids append lines of the form
     # [t1,t2,noutput,x1,x2,y1,y2,xpoints,ypoints,\
     #  ioutarrivaltimes,ioutsurfacemax]
+
+    # == fgmax.data values ==
+    fgmax_files = rundata.fgmax_data.fgmax_files
+    # for fixed grids append to this list names of any fgmax input files
+    fgmax_files.append('fgmax_grid.txt')
+    rundata.fgmax_data.num_fgmax_val = 1  # Save depth only
+
+
 
     return rundata
     # end of function setgeo

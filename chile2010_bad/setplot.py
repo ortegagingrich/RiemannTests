@@ -82,7 +82,7 @@ def setplot(plotdata):
     plotitem.pcolor_cmin = 0.0
     plotitem.pcolor_cmax = 100.0
     plotitem.add_colorbar = False
-    plotitem.amr_celledges_show = [1,1,0]
+    plotitem.amr_celledges_show = [1,0,0]
     plotitem.patchedges_show = 1
     plotaxes.xlimits = [-120,-60]
     plotaxes.ylimits = [-60,0]
@@ -149,6 +149,13 @@ def setplot(plotdata):
         xlabel('time (hours)')
 
     plotaxes.afteraxes = add_zeroline
+
+
+    #-----------------------------------------
+    # Figures for fgmax - max values on fixed grids
+    #-----------------------------------------
+    otherfigure = plotdata.new_otherfigure(name='max amplitude and arrival times', 
+                    fname='amplitude_times.png')
 
 
 
