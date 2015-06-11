@@ -18,7 +18,7 @@ cp -r src/ _run_$2/src/
 cd _run_$2
 
 echo "Executing command: make "$1
-make $1
+nice -n 7 make $1
 
 echo "Copying driver files used into archive for easy retrieval"
 
