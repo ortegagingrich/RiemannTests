@@ -1,0 +1,896 @@
+Copying driver files into _runs_full
+Executing command: make .plots
+touch src/geoclaw/fgmax_module.mod; gfortran -c src/geoclaw/fgmax_module.f90 -Jsrc/geoclaw   -I/home/ortegagi/clawpack/amrclaw/src/2d/ -I/home/ortegagi/clawpack/geoclaw/src/2d/shallow/ -Isrc/geoclaw/ -I/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/  -fopenmp -O2 -o src/geoclaw/fgmax_module.o
+gfortran     /home/ortegagi/clawpack/geoclaw/src/2d/shallow/utility_module.o /home/ortegagi/clawpack/amrclaw/src/2d/amr_module.o /home/ortegagi/clawpack/amrclaw/src/2d/regions_module.o /home/ortegagi/clawpack/amrclaw/src/2d/gauges_module.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/geoclaw_module.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/topo_module.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/qinit_module.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/refinement_module.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fixedgrids_module.o src/geoclaw/fgmax_module.o     /home/ortegagi/clawpack/geoclaw/src/2d/shallow/setprob.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/qinit.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/topo_update.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/cellgridintegrate2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/topointegral.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/bilinearintegral.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/stepgrid.o /home/ortegagi/clawpack/riemann/src/rpn2_geoclaw.o /home/ortegagi/clawpack/riemann/src/rpt2_geoclaw.o /home/ortegagi/clawpack/riemann/src/geoclaw_riemann_utils.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/src2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/src1d.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/step2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/flux2fw.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/qad.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/valout.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/filval.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/filpatch.o /home/ortegagi/clawpack/amrclaw/src/2d/prefilp.o /home/ortegagi/clawpack/amrclaw/src/2d/trimbd.o /home/ortegagi/clawpack/amrclaw/src/2d/bound.o /home/ortegagi/clawpack/amrclaw/src/2d/intfil.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/bc2amr.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/update.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/setaux.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/flag2refine2.o /home/ortegagi/clawpack/amrclaw/src/2d/flagregions2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/allowflag.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/b4step2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/dumpgauge.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/upbnd.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/tick.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/setgrd.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/gfixup.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/ginit.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/getmaxspeed.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/advanc.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/amr2.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fgmax_read.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fgmax_frompatch.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fgmax_interpolate0.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fgmax_values.o /home/ortegagi/clawpack/geoclaw/src/2d/shallow/fgmax_finalize.o /home/ortegagi/clawpack/amrclaw/src/2d/quick_sort1.o /home/ortegagi/clawpack/amrclaw/src/2d/estdt.o /home/ortegagi/clawpack/amrclaw/src/2d/check4nans.o /home/ortegagi/clawpack/amrclaw/src/2d/spest2.o /home/ortegagi/clawpack/amrclaw/src/2d/init_iflags.o /home/ortegagi/clawpack/amrclaw/src/2d/igetsp.o /home/ortegagi/clawpack/amrclaw/src/2d/reclam.o /home/ortegagi/clawpack/amrclaw/src/2d/birect.o /home/ortegagi/clawpack/amrclaw/src/2d/cleanup.o /home/ortegagi/clawpack/amrclaw/src/2d/colate2.o /home/ortegagi/clawpack/amrclaw/src/2d/errest.o /home/ortegagi/clawpack/amrclaw/src/2d/prepregstep.o /home/ortegagi/clawpack/amrclaw/src/2d/prepbigstep.o /home/ortegagi/clawpack/amrclaw/src/2d/bufnst2.o /home/ortegagi/clawpack/amrclaw/src/2d/flagger.o /home/ortegagi/clawpack/amrclaw/src/2d/errf1.o /home/ortegagi/clawpack/amrclaw/src/2d/fixcapaq.o /home/ortegagi/clawpack/amrclaw/src/2d/flglvl2.o /home/ortegagi/clawpack/amrclaw/src/2d/fluxad.o /home/ortegagi/clawpack/amrclaw/src/2d/fluxsv.o /home/ortegagi/clawpack/amrclaw/src/2d/grdfit2.o /home/ortegagi/clawpack/amrclaw/src/2d/moment.o /home/ortegagi/clawpack/amrclaw/src/2d/nestck2.o /home/ortegagi/clawpack/amrclaw/src/2d/prepc.o /home/ortegagi/clawpack/amrclaw/src/2d/prepf.o /home/ortegagi/clawpack/amrclaw/src/2d/projec2.o /home/ortegagi/clawpack/amrclaw/src/2d/signs.o /home/ortegagi/clawpack/amrclaw/src/2d/findcut.o /home/ortegagi/clawpack/amrclaw/src/2d/smartbis.o /home/ortegagi/clawpack/amrclaw/src/2d/putnod.o /home/ortegagi/clawpack/amrclaw/src/2d/putsp.o /home/ortegagi/clawpack/amrclaw/src/2d/regrid.o /home/ortegagi/clawpack/amrclaw/src/2d/setuse.o /home/ortegagi/clawpack/amrclaw/src/2d/stst1.o /home/ortegagi/clawpack/amrclaw/src/2d/nodget.o /home/ortegagi/clawpack/amrclaw/src/2d/basic.o /home/ortegagi/clawpack/amrclaw/src/2d/outval.o /home/ortegagi/clawpack/amrclaw/src/2d/copysol.o /home/ortegagi/clawpack/amrclaw/src/2d/outvar.o /home/ortegagi/clawpack/amrclaw/src/2d/outmsh.o /home/ortegagi/clawpack/amrclaw/src/2d/outtre.o /home/ortegagi/clawpack/amrclaw/src/2d/domain.o /home/ortegagi/clawpack/amrclaw/src/2d/cellave.o /home/ortegagi/clawpack/amrclaw/src/2d/fdisc.o /home/ortegagi/clawpack/amrclaw/src/2d/fss.o /home/ortegagi/clawpack/amrclaw/src/2d/zeroin.o /home/ortegagi/clawpack/amrclaw/src/2d/setflags.o /home/ortegagi/clawpack/amrclaw/src/2d/shiftset2.o /home/ortegagi/clawpack/amrclaw/src/2d/conck.o /home/ortegagi/clawpack/amrclaw/src/2d/domshrink.o /home/ortegagi/clawpack/amrclaw/src/2d/domprep.o /home/ortegagi/clawpack/amrclaw/src/2d/domup.o /home/ortegagi/clawpack/amrclaw/src/2d/domcopy.o /home/ortegagi/clawpack/amrclaw/src/2d/setdomflags.o /home/ortegagi/clawpack/amrclaw/src/2d/setIndices.o /home/ortegagi/clawpack/amrclaw/src/2d/coarseGridFlagSet.o /home/ortegagi/clawpack/amrclaw/src/2d/addflags.o /home/ortegagi/clawpack/amrclaw/src/2d/baseCheck.o /home/ortegagi/clawpack/amrclaw/src/2d/drivesort.o /home/ortegagi/clawpack/amrclaw/src/2d/flagcheck.o /home/ortegagi/clawpack/amrclaw/src/2d/domgrid.o /home/ortegagi/clawpack/amrclaw/src/2d/setPhysBndryFlags.o /home/ortegagi/clawpack/amrclaw/src/2d/griddomup.o /home/ortegagi/clawpack/amrclaw/src/2d/griddomcopy.o /home/ortegagi/clawpack/amrclaw/src/2d/griddomshrink.o /home/ortegagi/clawpack/amrclaw/src/2d/coarsen.o /home/ortegagi/clawpack/amrclaw/src/2d/auxcoarsen.o /home/ortegagi/clawpack/amrclaw/src/2d/intcopy.o /home/ortegagi/clawpack/amrclaw/src/2d/preintcopy.o /home/ortegagi/clawpack/amrclaw/src/2d/icall.o /home/ortegagi/clawpack/amrclaw/src/2d/preicall.o /home/ortegagi/clawpack/amrclaw/src/2d/inlinelimiter.o /home/ortegagi/clawpack/amrclaw/src/2d/cstore.o /home/ortegagi/clawpack/amrclaw/src/2d/saveqc.o /home/ortegagi/clawpack/amrclaw/src/2d/check.o /home/ortegagi/clawpack/amrclaw/src/2d/restrt.o /home/ortegagi/clawpack/amrclaw/src/2d/opendatafile.o /home/ortegagi/clawpack/amrclaw/src/2d/init_alloc.o /home/ortegagi/clawpack/amrclaw/src/2d/restrt_alloc.o /home/ortegagi/clawpack/amrclaw/src/2d/resize_alloc.o   -I/home/ortegagi/clawpack/amrclaw/src/2d/ -I/home/ortegagi/clawpack/geoclaw/src/2d/shallow/ -Isrc/geoclaw/ -I/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/  -fopenmp -O2 -o xgeoclaw                 
+make data
+make[1]: Entering directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+rm -f .data
+python setrun.py         geoclaw                  
+Domain:   -130.000000  -123.000000   39.000000   52.000000
+Level 1 resolution:  dy = 1 deg, 0 min, 0 sec = 111000 meters
+
+Level 2 resolution:  dy = 0 deg, 6 min, 0 sec = 11100 meters  (refined by 10)
+
+Level 3 resolution:  dy = 0 deg, 0 min, 30 sec = 925 meters  (refined by 12)
+
+Level 4 resolution:  dy = 0 deg, 0 min, 1 sec = 30.8333 meters  (refined by 30)
+
+Allowing maximum of 4 levels
+Region 0: -131.000000  -122.000000   38.000000   53.000000
+           minlevel = 1,  maxlevel = 2  t1 =        0.0,  t2 = 10000000000.0
+Region 1: -127.000000  -123.500000   39.500000   49.500000
+           minlevel = 2,  maxlevel = 3  t1 =        0.0,  t2 = 10000000000.0
+Region 2: -124.300000  -123.700000   46.800000   47.200000
+           minlevel = 3,  maxlevel = 3  t1 =        0.0,  t2 = 10000000000.0
+Region 3: -124.200000  -124.100000   46.925000   47.025000
+           minlevel = 4,  maxlevel = 4  t1 =        0.0,  t2 = 10000000000.0
+Region 4: -124.140000  -124.080000   46.850000   46.920000
+           minlevel = 4,  maxlevel = 4  t1 =        0.0,  t2 = 10000000000.0
+Region 5: -123.925000  -123.800000   46.950000   46.990000
+           minlevel = 4,  maxlevel = 4  t1 =        0.0,  t2 = 10000000000.0
+Created  regions.kml
+Gauge 1101: -124.183139   47.015998  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1102: -124.132097   46.880604  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1103: -123.808347   46.972014  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1104: -123.844931   46.957414  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1105: -123.899454   46.970356  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1106: -124.084365   46.886702  
+  t1 =      900.0,  t2 = 10000000000.0
+Gauge 1107: -124.128509   46.921531  
+  t1 =      900.0,  t2 = 10000000000.0
+Created  gauges.kml
+touch .data
+make[1]: Leaving directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+make output
+make[1]: Entering directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+rm -f .output
+python /home/ortegagi/clawpack/clawutil/src/python/clawutil/runclaw.py xgeoclaw                  _output                \
+	True                    False                     . False False None
+Reading data file: claw.data
+         first 5 lines are comments and will be skipped
+Reading data file: amr.data
+         first 5 lines are comments and will be skipped
+Reading data file: regions.data
+         first 5 lines are comments and will be skipped
+Reading data file: gauges.data
+         first 5 lines are comments and will be skipped
+Reading data file: fgmax.data
+         first 5 lines are comments and will be skipped
+  
+ Running amrclaw ...  
+  
+Reading data file: geoclaw.data
+         first 5 lines are comments and will be skipped
+Reading data file: refinement.data
+         first 5 lines are comments and will be skipped
+Reading data file: dtopo.data
+         first 5 lines are comments and will be skipped
+Reading data file: topo.data
+         first 5 lines are comments and will be skipped
+  
+ Reading topography file  /home/ortegagi/Data/topo/etopo1-131122039053.tt3                                                                                                      
+  
+ Reading topography file  /home/ortegagi/Data/topo/grays_harbor.tt3                                                                                                             
+Reading data file: qinit.data
+         first 5 lines are comments and will be skipped
+   qinit_type = 0, no perturbation
+Reading data file: fixed_grids.data
+         first 5 lines are comments and will be skipped
+ Storage allocated...
+there are    1 grids with       91 cells at level   1
+there are    8 grids with     9100 cells at level   2
+  require       4624 words - either none left or not big  enough space
+ free list: 
+
+           0             0
+      998303          1698
+     1000002             0
+
+ Expanding storage from      1000000  to      2000000
+  require       3468 words - either none left or not big  enough space
+ free list: 
+
+           0             0
+     1998243          1758
+     2000002             0
+
+ Expanding storage from      2000000  to      4000000
+  require       3468 words - either none left or not big  enough space
+ free list: 
+
+           0             0
+     3996967          3034
+     4000002             0
+
+ Expanding storage from      4000000  to      8000000
+   Setting initial dt to    1.0000000000000000     
+  max threads set to           11
+  
+ Done reading data, starting computation ...  
+  
+ Total mass at initial time:    1374307961387213.8     
+AMRCLAW: Frame    0 output files done at time t = 0.000000D+00
+
+ AMRCLAW: level  1  CFL = .244E-02  dt = 0.1000E+01  final t = 0.100000E+01
+ AMRCLAW: level  2  CFL = .254E-01  dt = 0.1000E+01  final t = 0.100000E+01
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.307754E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.288867E+02
+  require       3468 words - either none left or not big  enough space
+ free list: 
+
+           0             0
+     7997543          2458
+     8000002             0
+
+ Expanding storage from      8000000  to     16000000
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.567735E+02
+  require       3468 words - either none left or not big  enough space
+ free list: 
+
+           0             0
+      128643          3108
+      144643          3108
+      160643          3108
+      176643          3108
+      192643          3108
+      208643          3108
+      224643          3108
+      240643          3108
+      256643          3108
+      272643          3108
+      288643          3108
+      304643          3108
+      320643          3108
+      336643          3108
+      352643          3108
+      368643          3108
+    15998131          1870
+    16000002             0
+
+ Expanding storage from     16000000  to     32000000
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.846602E+02
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.112547E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.140434E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.168320E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.196207E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.224094E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.251981E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.279867E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.307754E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.614508E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.335641E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.363528E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.391414E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.419301E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.447188E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.475075E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.502961E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.530848E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.558735E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.586622E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.614508E+03
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.921263E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.642395E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.670282E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.698169E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.726055E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.753942E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.781829E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.809716E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.837602E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.865489E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.893376E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.921263E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.122802E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.949149E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.977036E+03
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.100492E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.103281E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.106070E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.108858E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.111647E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.114436E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.117224E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.120013E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.122802E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.153477E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.125590E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.128379E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.131168E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.133956E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.136745E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.139534E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.142322E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.145111E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.147900E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.150688E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.153477E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .648E+00  dt = 0.2652E+03  final t = 0.180000E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.156424E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.159371E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.162318E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.165265E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.168212E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.171159E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.174106E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.177053E+04
+ AMRCLAW: level  2  CFL = .747E+00  dt = 0.2947E+02  final t = 0.180000E+04
+AMRCLAW: Frame    1 output files done at time t = 0.180000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.210675E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.182789E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.185577E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.188366E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.191155E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.193943E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.196732E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.199521E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.202309E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.205098E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.207887E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.210675E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.241351E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.213464E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.216253E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.219041E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.221830E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.224619E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.227407E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.230196E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.232985E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.235773E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.238562E+04
+ AMRCLAW: level  2  CFL = .708E+00  dt = 0.2789E+02  final t = 0.241351E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.272024E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.244139E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.246928E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.249716E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.252505E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.255293E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.258082E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.260870E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.263659E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.266447E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.269236E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.272024E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.302694E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.274813E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.277601E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.280389E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.283177E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.285965E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.288753E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.291542E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.294330E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.297118E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.299906E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2788E+02  final t = 0.302694E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.333369E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.305483E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.308271E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.311060E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.313849E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.316637E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.319426E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.322214E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.325003E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.327791E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.330580E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.333369E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 10 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  3 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2663E+03  final t = 0.360000E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.336032E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.338695E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.341358E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.344021E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.346684E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.349347E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.352011E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.354674E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.357337E+04
+ AMRCLAW: level  2  CFL = .676E+00  dt = 0.2663E+02  final t = 0.360000E+04
+AMRCLAW: Frame    2 output files done at time t = 0.360000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.390674E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.362789E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.365577E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.368366E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.371154E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.373943E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.376731E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.379520E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.382309E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.385097E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.387886E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.390674E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.421349E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.393463E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.396252E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.399040E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.401829E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.404617E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.407406E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.410195E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.412983E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.415772E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.418560E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.421349E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.452024E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.424138E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.426926E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.429715E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.432504E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.435292E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.438081E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.440869E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.443658E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.446447E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.449235E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.452024E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.482699E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.454813E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.457601E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.460390E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.463179E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.465967E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.468756E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.471545E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.474333E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.477122E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.479911E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.482699E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.513374E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.485488E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.488276E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.491065E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.493854E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.496642E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.499431E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.502220E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.505008E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.507797E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.510585E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.513374E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2663E+03  final t = 0.540000E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.516332E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.519291E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.522249E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.525208E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.528166E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.531125E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.534083E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.537042E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.540000E+04
+AMRCLAW: Frame    3 output files done at time t = 0.540000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.570674E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.542789E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.545577E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.548366E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.551154E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.553943E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.556731E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.559520E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.562308E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.565097E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.567885E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.570674E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.601348E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.573462E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.576251E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.579039E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.581828E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.584616E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.587405E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.590194E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.592982E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.595771E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.598559E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.601348E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.632022E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.604136E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.606925E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.609713E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.612502E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.615291E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.618079E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.620868E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.623656E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.626445E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.629233E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.632022E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.662695E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.634810E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.637599E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.640387E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.643176E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.645964E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.648753E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.651541E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.654330E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.657118E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.659907E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.662695E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.693370E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.665484E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.668273E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.671061E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.673850E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.676638E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.679427E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.682215E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.685004E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.687793E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.690581E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.693370E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2663E+03  final t = 0.720000E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.696329E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.699288E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.702247E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.705205E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.708164E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.711123E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.714082E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.717041E+04
+ AMRCLAW: level  2  CFL = .751E+00  dt = 0.2959E+02  final t = 0.720000E+04
+AMRCLAW: Frame    4 output files done at time t = 0.720000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.750676E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.722789E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.725577E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.728366E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.731155E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.733943E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.736732E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.739521E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.742309E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.745098E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.747887E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.750676E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.781350E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.753464E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.756253E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.759041E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.761830E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.764619E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.767407E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.770196E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.772984E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.775773E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.778562E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.781350E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.812025E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.784139E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.786927E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.789716E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.792505E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.795293E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.798082E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.800870E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.803659E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.806447E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.809236E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.812025E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.842700E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.814813E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.817602E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.820390E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.823179E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.825968E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.828756E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.831545E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.834334E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.837122E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.839911E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.842700E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.873375E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.845488E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.848277E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.851066E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.853854E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.856643E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.859432E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.862220E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.865009E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.867798E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.870586E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.873375E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2662E+03  final t = 0.900000E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.876333E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.879292E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.882250E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.885208E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.888167E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.891125E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.894083E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.897042E+04
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.900000E+04
+AMRCLAW: Frame    5 output files done at time t = 0.900000D+04
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.930675E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.902789E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.905577E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.908366E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.911154E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.913943E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.916732E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.919520E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.922309E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.925097E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.927886E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.930675E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.961348E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.933463E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.936252E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.939040E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.941829E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.944617E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.947406E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.950194E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.952983E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.955771E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.958560E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.961348E+04
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.992023E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.964137E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.966926E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.969714E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.972503E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.975291E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.978080E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.980868E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.983657E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.986446E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.989234E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.992023E+04
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.102270E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.994811E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.997600E+04
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.100039E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.100318E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.100597E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.100875E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.101154E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.101433E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.101712E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.101991E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.102270E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.105337E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.102549E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.102828E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.103106E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.103385E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.103664E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.103943E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.104222E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.104501E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.104780E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.105059E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.105337E+05
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2663E+03  final t = 0.108000E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.105633E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.105929E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.106225E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.106521E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.106817E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.107112E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.107408E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.107704E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.108000E+05
+AMRCLAW: Frame    6 output files done at time t = 0.108000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.111068E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.108279E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.108558E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.108837E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.109115E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.109394E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.109673E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.109952E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.110231E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.110510E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.110789E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.111068E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.114135E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.111347E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.111625E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.111904E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.112183E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.112462E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.112741E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.113020E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.113299E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.113578E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.113856E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.114135E+05
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.117203E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.114414E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.114693E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.114972E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.115251E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.115530E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.115809E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.116087E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.116366E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.116645E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.116924E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.117203E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.120271E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.117482E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.117761E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.118040E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.118318E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.118597E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.118876E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.119155E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.119434E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.119713E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.119992E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.120271E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.123338E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.120549E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.120828E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.121107E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.121386E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.121665E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.121944E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.122223E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.122502E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.122780E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.123059E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.123338E+05
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2662E+03  final t = 0.126000E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.123634E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.123930E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.124225E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.124521E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.124817E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.125113E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.125408E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.125704E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.126000E+05
+AMRCLAW: Frame    7 output files done at time t = 0.126000D+05
+
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.129068E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.126279E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.126558E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.126837E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.127115E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.127394E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.127673E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.127952E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.128231E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.128510E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.128789E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.129068E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.132135E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.129346E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.129625E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.129904E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.130183E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.130462E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.130741E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.131020E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.131298E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.131577E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.131856E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.132135E+05
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.135203E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.132414E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.132693E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.132972E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.133250E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.133529E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.133808E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.134087E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.134366E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.134645E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.134924E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.135203E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.138270E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.135481E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.135760E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.136039E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.136318E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.136597E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.136876E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.137155E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.137433E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.137712E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.137991E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.138270E+05
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3067E+03  final t = 0.141337E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.138549E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.138828E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.139107E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.139385E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.139664E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.139943E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.140222E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.140501E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.140780E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.141059E+05
+ AMRCLAW: level  2  CFL = .707E+00  dt = 0.2789E+02  final t = 0.141337E+05
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .651E+00  dt = 0.2663E+03  final t = 0.144000E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.141633E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.141929E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.142225E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.142521E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.142817E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.143112E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.143408E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.143704E+05
+ AMRCLAW: level  2  CFL = .750E+00  dt = 0.2958E+02  final t = 0.144000E+05
+AMRCLAW: Frame    8 output files done at time t = 0.144000D+05
+
+ Done integrating to time    14400.000000000000     
+Total time to solution =   15267.46400000 s, using 11 threads
+Total advanc time on level   1 =      13.09100000 s
+Total advanc time on level   2 =      54.62200000 s
+Total advanc time on level   3 =    1131.07800000 s
+Total advanc time on level   4 =   13833.92900000 s
+Total updating   time                 63.07500000 s
+Total valout     time                  0.72500000 s
+
+Total regridding time (clock)        180.12600000 s
+   Total Grdfit     time (clock)          39.72100000 s
+      Total Flglvl  time                     39.43100000 s
+         Total    Flagger     time (clock)          25.35400000 s
+         Total    Bufnst     time (clock)          13.76700000 s
+   Total gfixup     time  (clock)        96.28700000 s
+      Total filval (wall) time           95.67300000 s
+          Total filval (all cores) time         813.63500000 s
+
+Total setaux (all cores) time       99196.65800000 s
+
+  integration time, still not counting saveqc
+Total Bound (all levels) wall time         9596.37100000 s
+Total stepgrid (all levels) wall time      5411.08500000 s
+==> runclaw: Will take data from  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full
+==> runclaw: Will write output to  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+==> runclaw: Removing all old fort files in  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+
+==> Running with command:
+    /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/xgeoclaw
+
+==> runclaw: Finished executing
+
+==> runclaw: Done executing /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/xgeoclaw via clawutil.runclaw.py
+==> runclaw: Output is in  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+make[1]: Leaving directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+make plots
+make[1]: Entering directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+rm -f .plots
+python /home/ortegagi/clawpack/visclaw/src/python/visclaw/plotclaw.py _output                _plots                setplot.py      
+Importing setplot.setplot from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full.
+Executed setplot successfully
+Will plot 9 frames numbered: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+Will make 5 figure(s) for each frame, numbered:  [0, 1, 2, 3, 4]
+
+-----------------------------------
+
+
+Creating html pages for figures...
+
+Directory '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_plots' 
+    already exists, files may be overwritten 
+Now making png files for all figures...
+    Reading  Frame 0 at t = 0  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 0 at time t = 0.0
+    Reading  Frame 1 at t = 1800  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 1 at time t = 1800.0
+    Reading  Frame 2 at t = 3600  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 2 at time t = 3600.0
+    Reading  Frame 3 at t = 5400  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 3 at time t = 5400.0
+    Reading  Frame 4 at t = 7200  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 4 at time t = 7200.0
+    Reading  Frame 5 at t = 9000  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 5 at time t = 9000.0
+    Reading  Frame 6 at t = 10800  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 6 at time t = 10800.0
+    Reading  Frame 7 at t = 12600  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 7 at time t = 12600.0
+    Reading  Frame 8 at t = 14400  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output
+Frame 8 at time t = 14400.0
+Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_output/fort.gauge
+In fort.gauge file, found gauge numbers [1101, 1102, 1103, 1104, 1105, 1106, 1107]
+Read in gauges [1101 1102 1103 1104 1105 1106 1107]
+Found data for Gauge 1101 
+Found data for Gauge 1102 
+Found data for Gauge 1103 
+Found data for Gauge 1104 
+Found data for Gauge 1105 
+Found data for Gauge 1106 
+Found data for Gauge 1107 
+
+-----------------------------------
+
+Creating latex file...
+Directory '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_plots' 
+    already exists, files may be overwritten 
+
+Latex file created:  
+  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_plots/plots.tex
+
+Use pdflatex to create pdf file
+Created JSAnimation for figure 0
+Created JSAnimation for figure 1
+Created JSAnimation for figure 2
+Created JSAnimation for figure 3
+Created JSAnimation for figure 4
+
+--------------------------------------------------------
+
+Point your browser to:
+    file:///home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full/_plots/_PlotIndex.html
+make[1]: Leaving directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_full'
+Copying driver files used into archive for easy retrieval
