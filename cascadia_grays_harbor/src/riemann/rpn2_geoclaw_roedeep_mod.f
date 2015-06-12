@@ -141,7 +141,7 @@ c
          hvL=qr(nv,i-1) 
          hvR=ql(nv,i)
          
-        roe_depth = 1.d0    
+        roe_depth = 10.d0    
         if ((hL<roe_depth) .or. (hR<roe_depth)) then
 	
       	   !check for wet/dry boundary
