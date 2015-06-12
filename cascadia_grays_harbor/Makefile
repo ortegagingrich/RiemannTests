@@ -56,7 +56,7 @@ SOURCES = \
   $(GEOLIB)/topointegral.f \
   $(GEOLIB)/bilinearintegral.f \
   $(GEOLIB)/stepgrid.f \
-  src/riemann/rpn2_hybrid.f \
+  src/riemann/rpn2_geoclaw_roedeep_mod.f \
   src/riemann/rpt2_geoclaw.f \
   src/riemann/geoclaw_riemann_utils.f \
   $(GEOLIB)/src2.f90 \
