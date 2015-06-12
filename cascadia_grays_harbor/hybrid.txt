@@ -131,1566 +131,793 @@ AMRCLAW: Frame    0 output files done at time t = 0.000000D+00
      8000002             0
 
  Expanding storage from      8000000  to     16000000
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           1  0.66397020704555876     
-     new ntogo dt            2  0.33198510352278099     
-*** WARNING *** Courant number  =  0.1201D+01  is larger than input cfl_max =   0.1000D+01  on grid *** level   4
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           1  0.33198510352278099     
-     new ntogo dt            2  0.16599255176138961     
-*** WARNING *** Courant number  =  0.3271D+01  is larger than input cfl_max =   0.1000D+01  on grid *** level   4
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           1  0.16599255176138961     
-     new ntogo dt            2  8.29962758806939149E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           2  8.29962758806939149E-002
-     new ntogo dt            3  5.53308505871292766E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           3  5.53308505871292766E-002
-     new ntogo dt            4  4.14981379403469575E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           4  4.14981379403469575E-002
-     new ntogo dt            5  3.31985103522775687E-002
-*** WARNING *** Courant number  =  0.9524D+02  is larger than input cfl_max =   0.1000D+01  on grid *** level   4
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           4  3.31985103522775687E-002
-     new ntogo dt            5  2.65588082818219093E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           5  2.65588082818219093E-002
-     new ntogo dt            6  2.21323402348515934E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           6  2.21323402348515934E-002
-     new ntogo dt            7  1.89705773441585061E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           7  1.89705773441585061E-002
-     new ntogo dt            8  1.65992551761386942E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           8  1.65992551761386942E-002
-     new ntogo dt            9  1.47548934899010623E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt           9  1.47548934899010623E-002
-     new ntogo dt           10  1.32794041409109546E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          10  1.32794041409109546E-002
-     new ntogo dt           11  1.20721855826463227E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          11  1.20721855826463227E-002
-     new ntogo dt           12  1.10661701174257967E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          12  1.10661701174257967E-002
-     new ntogo dt           13  1.02149262622391965E-002
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          13  1.02149262622391965E-002
-     new ntogo dt           14  9.48528867207925307E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          14  9.48528867207925307E-003
-     new ntogo dt           15  8.85293609394063701E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          15  8.85293609394063701E-003
-     new ntogo dt           16  8.29962758806934708E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          16  8.29962758806934708E-003
-     new ntogo dt           17  7.81141420053585618E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          17  7.81141420053585618E-003
-     new ntogo dt           18  7.37744674495053113E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          18  7.37744674495053113E-003
-     new ntogo dt           19  6.98916007416366079E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          19  6.98916007416366079E-003
-     new ntogo dt           20  6.63970207045547732E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          20  6.63970207045547732E-003
-     new ntogo dt           21  6.32352578138616929E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          21  6.32352578138616929E-003
-     new ntogo dt           22  6.03609279132316136E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          22  6.03609279132316136E-003
-     new ntogo dt           23  5.77365397430911094E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          23  5.77365397430911094E-003
-     new ntogo dt           24  5.53308505871289835E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          24  5.53308505871289835E-003
-     new ntogo dt           25  5.31176165636438203E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          25  5.31176165636438203E-003
-     new ntogo dt           26  5.10746313111959827E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          26  5.10746313111959827E-003
-     new ntogo dt           27  4.91829782996702075E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          27  4.91829782996702075E-003
-     new ntogo dt           28  4.74264433603962653E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          28  4.74264433603962653E-003
-     new ntogo dt           29  4.57910487617619114E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          29  4.57910487617619114E-003
-     new ntogo dt           30  4.42646804697031850E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          30  4.42646804697031850E-003
-     new ntogo dt           31  4.28367875513256582E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          31  4.28367875513256582E-003
-     new ntogo dt           32  4.14981379403467354E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          32  4.14981379403467354E-003
-     new ntogo dt           33  4.02406186088210757E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          33  4.02406186088210757E-003
-     new ntogo dt           34  3.90570710026792809E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          34  3.90570710026792809E-003
-     new ntogo dt           35  3.79411546883170157E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          35  3.79411546883170157E-003
-     new ntogo dt           36  3.68872337247526556E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          36  3.68872337247526556E-003
-     new ntogo dt           37  3.58902814619215015E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          37  3.58902814619215015E-003
-     new ntogo dt           38  3.49458003708183040E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          38  3.49458003708183040E-003
-     new ntogo dt           39  3.40497542074639885E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          39  3.40497542074639885E-003
-     new ntogo dt           40  3.31985103522773866E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          40  3.31985103522773866E-003
-     new ntogo dt           41  3.23887905875876961E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          41  3.23887905875876961E-003
-     new ntogo dt           42  3.16176289069308464E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          42  3.16176289069308464E-003
-     new ntogo dt           43  3.08823352114208274E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          43  3.08823352114208274E-003
-     new ntogo dt           44  3.01804639566158068E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          44  3.01804639566158068E-003
-     new ntogo dt           45  2.95097869798021219E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          45  2.95097869798021219E-003
-     new ntogo dt           46  2.88682698715455547E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          46  2.88682698715455547E-003
-     new ntogo dt           47  2.82540513636403293E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          47  2.82540513636403293E-003
-     new ntogo dt           48  2.76654252935644917E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          48  2.76654252935644917E-003
-     new ntogo dt           49  2.71008247773692982E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          49  2.71008247773692982E-003
-     new ntogo dt           50  2.65588082818219101E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          50  2.65588082818219101E-003
-     new ntogo dt           51  2.60380473351195206E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          51  2.60380473351195206E-003
-     new ntogo dt           52  2.55373156555979914E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          52  2.55373156555979914E-003
-     new ntogo dt           53  2.50554795111527454E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          53  2.50554795111527454E-003
-     new ntogo dt           54  2.45914891498351038E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          54  2.45914891498351038E-003
-     new ntogo dt           55  2.41443711652926472E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          55  2.41443711652926472E-003
-     new ntogo dt           56  2.37132216801981327E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          56  2.37132216801981327E-003
-     new ntogo dt           57  2.32972002472122026E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          57  2.32972002472122026E-003
-     new ntogo dt           58  2.28955243808809557E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          58  2.28955243808809557E-003
-     new ntogo dt           59  2.25074646456117867E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          59  2.25074646456117867E-003
-     new ntogo dt           60  2.21323402348515925E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          60  2.21323402348515925E-003
-     new ntogo dt           61  2.17695149850999272E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          61  2.17695149850999272E-003
-     new ntogo dt           62  2.14183937756628291E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          62  2.14183937756628291E-003
-     new ntogo dt           63  2.10784192712872324E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          63  2.10784192712872324E-003
-     new ntogo dt           64  2.07490689701733677E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          64  2.07490689701733677E-003
-     new ntogo dt           65  2.04298525244783931E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          65  2.04298525244783931E-003
-     new ntogo dt           66  2.01203093044105379E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          66  2.01203093044105379E-003
-     new ntogo dt           67  1.98200061804641118E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          67  1.98200061804641118E-003
-     new ntogo dt           68  1.95285355013396405E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          68  1.95285355013396405E-003
-     new ntogo dt           69  1.92455132476970357E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          69  1.92455132476970357E-003
-     new ntogo dt           70  1.89705773441585079E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          70  1.89705773441585079E-003
-     new ntogo dt           71  1.87033861139590920E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          71  1.87033861139590920E-003
-     new ntogo dt           72  1.84436168623763278E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          72  1.84436168623763278E-003
-     new ntogo dt           73  1.81909645765903488E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          73  1.81909645765903488E-003
-     new ntogo dt           74  1.79451407309607507E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          74  1.79451407309607507E-003
-     new ntogo dt           75  1.77058721878812727E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          75  1.77058721878812727E-003
-     new ntogo dt           76  1.74729001854091520E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          76  1.74729001854091520E-003
-     new ntogo dt           77  1.72459794037804607E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          77  1.72459794037804607E-003
-     new ntogo dt           78  1.70248771037319942E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          78  1.70248771037319942E-003
-     new ntogo dt           79  1.68093723302670315E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          79  1.68093723302670315E-003
-     new ntogo dt           80  1.65992551761386933E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          80  1.65992551761386933E-003
-     new ntogo dt           81  1.63943260998900692E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          81  1.63943260998900692E-003
-     new ntogo dt           82  1.61943952937938481E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          82  1.61943952937938481E-003
-     new ntogo dt           83  1.59992820974830794E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          83  1.59992820974830794E-003
-     new ntogo dt           84  1.58088144534654232E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          84  1.58088144534654232E-003
-     new ntogo dt           85  1.56228284010717124E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          85  1.56228284010717124E-003
-     new ntogo dt           86  1.54411676057104137E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          86  1.54411676057104137E-003
-     new ntogo dt           87  1.52636829205873045E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          87  1.52636829205873045E-003
-     new ntogo dt           88  1.50902319783079034E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          88  1.50902319783079034E-003
-     new ntogo dt           89  1.49206788100123087E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          89  1.49206788100123087E-003
-     new ntogo dt           90  1.47548934899010610E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          90  1.47548934899010610E-003
-     new ntogo dt           91  1.45927518031988522E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          91  1.45927518031988522E-003
-     new ntogo dt           92  1.44341349357727773E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          92  1.44341349357727773E-003
-     new ntogo dt           93  1.42789291837752208E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          93  1.42789291837752208E-003
-     new ntogo dt           94  1.41270256818201646E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          94  1.41270256818201646E-003
-     new ntogo dt           95  1.39783201483273216E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          95  1.39783201483273216E-003
-     new ntogo dt           96  1.38327126467822459E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          96  1.38327126467822459E-003
-     new ntogo dt           97  1.36901073617638714E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          97  1.36901073617638714E-003
-     new ntogo dt           98  1.35504123886846491E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          98  1.35504123886846491E-003
-     new ntogo dt           99  1.34135395362736912E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt          99  1.34135395362736912E-003
-     new ntogo dt          100  1.32794041409109551E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         100  1.32794041409109551E-003
-     new ntogo dt          101  1.31479248919910458E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         101  1.31479248919910458E-003
-     new ntogo dt          102  1.30190236675597603E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         102  1.30190236675597603E-003
-     new ntogo dt          103  1.28926253795251999E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         103  1.28926253795251999E-003
-     new ntogo dt          104  1.27686578277989957E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         104  1.27686578277989957E-003
-     new ntogo dt          105  1.26470515627723386E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         105  1.26470515627723386E-003
-     new ntogo dt          106  1.25277397555763727E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         106  1.25277397555763727E-003
-     new ntogo dt          107  1.24106580756177154E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         107  1.24106580756177154E-003
-     new ntogo dt          108  1.22957445749175519E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         108  1.22957445749175519E-003
-     new ntogo dt          109  1.21829395788173906E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         109  1.21829395788173906E-003
-     new ntogo dt          110  1.20721855826463236E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         110  1.20721855826463236E-003
-     new ntogo dt          111  1.19634271539738346E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         111  1.19634271539738346E-003
-     new ntogo dt          112  1.18566108400990663E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         112  1.18566108400990663E-003
-     new ntogo dt          113  1.17516850804521731E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         113  1.17516850804521731E-003
-     new ntogo dt          114  1.16486001236061013E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         114  1.16486001236061013E-003
-     new ntogo dt          115  1.15473079486182227E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         115  1.15473079486182227E-003
-     new ntogo dt          116  1.14477621904404778E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         116  1.14477621904404778E-003
-     new ntogo dt          117  1.13499180691546621E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         117  1.13499180691546621E-003
-     new ntogo dt          118  1.12537323228058934E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         118  1.12537323228058934E-003
-     new ntogo dt          119  1.11591631436226517E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         119  1.11591631436226517E-003
-     new ntogo dt          120  1.10661701174257963E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         120  1.10661701174257963E-003
-     new ntogo dt          121  1.09747141660421123E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         121  1.09747141660421123E-003
-     new ntogo dt          122  1.08847574925499636E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         122  1.08847574925499636E-003
-     new ntogo dt          123  1.07962635291958980E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         123  1.07962635291958980E-003
-     new ntogo dt          124  1.07091968878314145E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         124  1.07091968878314145E-003
-     new ntogo dt          125  1.06235233127287645E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         125  1.06235233127287645E-003
-     new ntogo dt          126  1.05392096356436162E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         126  1.05392096356436162E-003
-     new ntogo dt          127  1.04562237330007527E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         127  1.04562237330007527E-003
-     new ntogo dt          128  1.03745344850866839E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         128  1.03745344850866839E-003
-     new ntogo dt          129  1.02941117371402758E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         129  1.02941117371402758E-003
-     new ntogo dt          130  1.02149262622391965E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         130  1.02149262622391965E-003
-     new ntogo dt          131  1.01369497258862258E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         131  1.01369497258862258E-003
-     new ntogo dt          132  1.00601546522052689E-003
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         132  1.00601546522052689E-003
-     new ntogo dt          133  9.98451439166237256E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         133  9.98451439166237256E-004
-     new ntogo dt          134  9.91000309023205590E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         134  9.91000309023205590E-004
-     new ntogo dt          135  9.83659565993404063E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         135  9.83659565993404063E-004
-     new ntogo dt          136  9.76426775066982023E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         136  9.76426775066982023E-004
-     new ntogo dt          137  9.69299572329266842E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         137  9.69299572329266842E-004
-     new ntogo dt          138  9.62275662384851787E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         138  9.62275662384851787E-004
-     new ntogo dt          139  9.55352815892874445E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         139  9.55352815892874445E-004
-     new ntogo dt          140  9.48528867207925393E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         140  9.48528867207925393E-004
-     new ntogo dt          141  9.41801712121344346E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         141  9.41801712121344346E-004
-     new ntogo dt          142  9.35169305697954598E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         142  9.35169305697954598E-004
-     new ntogo dt          143  9.28629660203563303E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         143  9.28629660203563303E-004
-     new ntogo dt          144  9.22180843118816391E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         144  9.22180843118816391E-004
-     new ntogo dt          145  9.15820975235238292E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         145  9.15820975235238292E-004
-     new ntogo dt          146  9.09548228829517441E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         146  9.09548228829517441E-004
-     new ntogo dt          147  9.03360825912309868E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         147  9.03360825912309868E-004
-     new ntogo dt          148  8.97257036548037537E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         148  8.97257036548037537E-004
-     new ntogo dt          149  8.91235177242346004E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         149  8.91235177242346004E-004
-     new ntogo dt          150  8.85293609394063635E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         150  8.85293609394063635E-004
-     new ntogo dt          151  8.79430737808672503E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         151  8.79430737808672503E-004
-     new ntogo dt          152  8.73645009270457599E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         152  8.73645009270457599E-004
-     new ntogo dt          153  8.67934911170650651E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         153  8.67934911170650651E-004
-     new ntogo dt          154  8.62298970189023036E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         154  8.62298970189023036E-004
-     new ntogo dt          155  8.56735751026513294E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         155  8.56735751026513294E-004
-     new ntogo dt          156  8.51243855186599712E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         156  8.51243855186599712E-004
-     new ntogo dt          157  8.45821919803245578E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         157  8.45821919803245578E-004
-     new ntogo dt          158  8.40468616513351577E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         158  8.40468616513351577E-004
-     new ntogo dt          159  8.35182650371758145E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         159  8.35182650371758145E-004
-     new ntogo dt          160  8.29962758806934665E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         160  8.29962758806934665E-004
-     new ntogo dt          161  8.24807710615587308E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         161  8.24807710615587308E-004
-     new ntogo dt          162  8.19716304994503459E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         162  8.19716304994503459E-004
-     new ntogo dt          163  8.14687370608034090E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         163  8.14687370608034090E-004
-     new ntogo dt          164  8.09719764689692404E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         164  8.09719764689692404E-004
-     new ntogo dt          165  8.04812372176421536E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         165  8.04812372176421536E-004
-     new ntogo dt          166  7.99964104874153971E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         166  7.99964104874153971E-004
-     new ntogo dt          167  7.95173900653350658E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         167  7.95173900653350658E-004
-     new ntogo dt          168  7.90440722673271161E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         168  7.90440722673271161E-004
-     new ntogo dt          169  7.85763558633784391E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         169  7.85763558633784391E-004
-     new ntogo dt          170  7.81141420053585618E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         170  7.81141420053585618E-004
-     new ntogo dt          171  7.76573341573740124E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         171  7.76573341573740124E-004
-     new ntogo dt          172  7.72058380285520684E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         172  7.72058380285520684E-004
-     new ntogo dt          173  7.67595615081558100E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         173  7.67595615081558100E-004
-     new ntogo dt          174  7.63184146029365225E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         174  7.63184146029365225E-004
-     new ntogo dt          175  7.58823093766340336E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         175  7.58823093766340336E-004
-     new ntogo dt          176  7.54511598915395170E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         176  7.54511598915395170E-004
-     new ntogo dt          177  7.50248821520392963E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         177  7.50248821520392963E-004
-     new ntogo dt          178  7.46033940500615434E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         178  7.46033940500615434E-004
-     new ntogo dt          179  7.41866153123517109E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         179  7.41866153123517109E-004
-     new ntogo dt          180  7.37744674495053048E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         180  7.37744674495053048E-004
-     new ntogo dt          181  7.33668737066903642E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         181  7.33668737066903642E-004
-     new ntogo dt          182  7.29637590159942610E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         182  7.29637590159942610E-004
-     new ntogo dt          183  7.25650499503330943E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         183  7.25650499503330943E-004
-     new ntogo dt          184  7.21706746788638867E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         184  7.21706746788638867E-004
-     new ntogo dt          185  7.17805629238429986E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         185  7.17805629238429986E-004
-     new ntogo dt          186  7.13946459188761042E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         186  7.13946459188761042E-004
-     new ntogo dt          187  7.10128563685077864E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         187  7.10128563685077864E-004
-     new ntogo dt          188  7.06351284091008232E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         188  7.06351284091008232E-004
-     new ntogo dt          189  7.02613975709574378E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         189  7.02613975709574378E-004
-     new ntogo dt          190  6.98916007416366079E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         190  6.98916007416366079E-004
-     new ntogo dt          191  6.95256761304238508E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         191  6.95256761304238508E-004
-     new ntogo dt          192  6.91635632339112293E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         192  6.91635632339112293E-004
-     new ntogo dt          193  6.88052028026474348E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         193  6.88052028026474348E-004
-     new ntogo dt          194  6.84505368088193572E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         194  6.84505368088193572E-004
-     new ntogo dt          195  6.80995084149279770E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         195  6.80995084149279770E-004
-     new ntogo dt          196  6.77520619434232455E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         196  6.77520619434232455E-004
-     new ntogo dt          197  6.74081428472637348E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         197  6.74081428472637348E-004
-     new ntogo dt          198  6.70676976813684559E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         198  6.70676976813684559E-004
-     new ntogo dt          199  6.67306740749294258E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         199  6.67306740749294258E-004
-     new ntogo dt          200  6.63970207045547754E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         200  6.63970207045547754E-004
-     new ntogo dt          201  6.60666872682137132E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         201  6.60666872682137132E-004
-     new ntogo dt          202  6.57396244599552288E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         202  6.57396244599552288E-004
-     new ntogo dt          203  6.54157839453741591E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         203  6.54157839453741591E-004
-     new ntogo dt          204  6.50951183377988015E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         204  6.50951183377988015E-004
-     new ntogo dt          205  6.47775811751753880E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         205  6.47775811751753880E-004
-     new ntogo dt          206  6.44631268976259995E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         206  6.44631268976259995E-004
-     new ntogo dt          207  6.41517108256567858E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         207  6.41517108256567858E-004
-     new ntogo dt          208  6.38432891389949784E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         208  6.38432891389949784E-004
-     new ntogo dt          209  6.35378188560332740E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         209  6.35378188560332740E-004
-     new ntogo dt          210  6.32352578138616929E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         210  6.32352578138616929E-004
-     new ntogo dt          211  6.29355646488670819E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         211  6.29355646488670819E-004
-     new ntogo dt          212  6.26386987778818636E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         212  6.26386987778818636E-004
-     new ntogo dt          213  6.23446203798636435E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         213  6.23446203798636435E-004
-     new ntogo dt          214  6.20532903780885770E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         214  6.20532903780885770E-004
-     new ntogo dt          215  6.17646704228416482E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         215  6.17646704228416482E-004
-     new ntogo dt          216  6.14787228745877594E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         216  6.14787228745877594E-004
-     new ntogo dt          217  6.11954107876080847E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         217  6.11954107876080847E-004
-     new ntogo dt          218  6.09146978940869528E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         218  6.09146978940869528E-004
-     new ntogo dt          219  6.06365485886345033E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         219  6.06365485886345033E-004
-     new ntogo dt          220  6.03609279132316179E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         220  6.03609279132316179E-004
-     new ntogo dt          221  6.00878015425835091E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         221  6.00878015425835091E-004
-     new ntogo dt          222  5.98171357698691728E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         222  5.98171357698691728E-004
-     new ntogo dt          223  5.95488974928742366E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         223  5.95488974928742366E-004
-     new ntogo dt          224  5.92830542004953317E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         224  5.92830542004953317E-004
-     new ntogo dt          225  5.90195739596042460E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         225  5.90195739596042460E-004
-     new ntogo dt          226  5.87584254022608657E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         226  5.87584254022608657E-004
-     new ntogo dt          227  5.84995777132641163E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         227  5.84995777132641163E-004
-     new ntogo dt          228  5.82430006180305066E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         228  5.82430006180305066E-004
-     new ntogo dt          229  5.79886643707902029E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         229  5.79886643707902029E-004
-     new ntogo dt          230  5.77365397430911137E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         230  5.77365397430911137E-004
-     new ntogo dt          231  5.74865980126015429E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         231  5.74865980126015429E-004
-     new ntogo dt          232  5.72388109522023892E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         232  5.72388109522023892E-004
-     new ntogo dt          233  5.69931508193603277E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         233  5.69931508193603277E-004
-     new ntogo dt          234  5.67495903457733105E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         234  5.67495903457733105E-004
-     new ntogo dt          235  5.65081027272806564E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         235  5.65081027272806564E-004
-     new ntogo dt          236  5.62686616140294668E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         236  5.62686616140294668E-004
-     new ntogo dt          237  5.60312411008901052E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         237  5.60312411008901052E-004
-     new ntogo dt          238  5.57958157181132584E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         238  5.57958157181132584E-004
-     new ntogo dt          239  5.55623604222215653E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         239  5.55623604222215653E-004
-     new ntogo dt          240  5.53308505871289813E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         240  5.53308505871289813E-004
-     new ntogo dt          241  5.51012619954811475E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         241  5.51012619954811475E-004
-     new ntogo dt          242  5.48735708302105617E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         242  5.48735708302105617E-004
-     new ntogo dt          243  5.46477536663002306E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         243  5.46477536663002306E-004
-     new ntogo dt          244  5.44237874627498180E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         244  5.44237874627498180E-004
-     new ntogo dt          245  5.42016495547385986E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         245  5.42016495547385986E-004
-     new ntogo dt          246  5.39813176459794900E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         246  5.39813176459794900E-004
-     new ntogo dt          247  5.37627698012589292E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         247  5.37627698012589292E-004
-     new ntogo dt          248  5.35459844391570727E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         248  5.35459844391570727E-004
-     new ntogo dt          249  5.33309403249435945E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         249  5.33309403249435945E-004
-     new ntogo dt          250  5.31176165636438225E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         250  5.31176165636438225E-004
-     new ntogo dt          251  5.29059925932707370E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         251  5.29059925932707370E-004
-     new ntogo dt          252  5.26960481782180810E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         252  5.26960481782180810E-004
-     new ntogo dt          253  5.24877634028101054E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         253  5.24877634028101054E-004
-     new ntogo dt          254  5.22811186650037635E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         254  5.22811186650037635E-004
-     new ntogo dt          255  5.20760946702390412E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         255  5.20760946702390412E-004
-     new ntogo dt          256  5.18726724254334193E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         256  5.18726724254334193E-004
-     new ntogo dt          257  5.16708332331165571E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         257  5.16708332331165571E-004
-     new ntogo dt          258  5.14705586857013789E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         258  5.14705586857013789E-004
-     new ntogo dt          259  5.12718306598878562E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         259  5.12718306598878562E-004
-     new ntogo dt          260  5.10746313111959827E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         260  5.10746313111959827E-004
-     new ntogo dt          261  5.08789430686243447E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         261  5.08789430686243447E-004
-     new ntogo dt          262  5.06847486294311291E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         262  5.06847486294311291E-004
-     new ntogo dt          263  5.04920309540340473E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         263  5.04920309540340473E-004
-     new ntogo dt          264  5.03007732610263446E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         264  5.03007732610263446E-004
-     new ntogo dt          265  5.01109590223054908E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         265  5.01109590223054908E-004
-     new ntogo dt          266  4.99225719583118628E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         266  4.99225719583118628E-004
-     new ntogo dt          267  4.97355960333743623E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         267  4.97355960333743623E-004
-     new ntogo dt          268  4.95500154511602795E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         268  4.95500154511602795E-004
-     new ntogo dt          269  4.93658146502265948E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         269  4.93658146502265948E-004
-     new ntogo dt          270  4.91829782996702032E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         270  4.91829782996702032E-004
-     new ntogo dt          271  4.90014912948743718E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         271  4.90014912948743718E-004
-     new ntogo dt          272  4.88213387533491011E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         272  4.88213387533491011E-004
-     new ntogo dt          273  4.86425060106628407E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         273  4.86425060106628407E-004
-     new ntogo dt          274  4.84649786164633421E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         274  4.84649786164633421E-004
-     new ntogo dt          275  4.82887423305852922E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         275  4.82887423305852922E-004
-     new ntogo dt          276  4.81137831192425894E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         276  4.81137831192425894E-004
-     new ntogo dt          277  4.79400871513030902E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         277  4.79400871513030902E-004
-     new ntogo dt          278  4.77676407946437222E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         278  4.77676407946437222E-004
-     new ntogo dt          279  4.75964306125840713E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         279  4.75964306125840713E-004
-     new ntogo dt          280  4.74264433603962697E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         280  4.74264433603962697E-004
-     new ntogo dt          281  4.72576659818895210E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         281  4.72576659818895210E-004
-     new ntogo dt          282  4.70900856060672173E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         282  4.70900856060672173E-004
-     new ntogo dt          283  4.69236895438549634E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         283  4.69236895438549634E-004
-     new ntogo dt          284  4.67584652848977299E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         284  4.67584652848977299E-004
-     new ntogo dt          285  4.65944004944244053E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         285  4.65944004944244053E-004
-     new ntogo dt          286  4.64314830101781651E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         286  4.64314830101781651E-004
-     new ntogo dt          287  4.62697008394109929E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         287  4.62697008394109929E-004
-     new ntogo dt          288  4.61090421559408195E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         288  4.61090421559408195E-004
-     new ntogo dt          289  4.59494952972697406E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         289  4.59494952972697406E-004
-     new ntogo dt          290  4.57910487617619146E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         290  4.57910487617619146E-004
-     new ntogo dt          291  4.56336912058795733E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         291  4.56336912058795733E-004
-     new ntogo dt          292  4.54774114414758721E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         292  4.54774114414758721E-004
-     new ntogo dt          293  4.53221984331431918E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         293  4.53221984331431918E-004
-     new ntogo dt          294  4.51680412956154934E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         294  4.51680412956154934E-004
-     new ntogo dt          295  4.50149292912235756E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         295  4.50149292912235756E-004
-     new ntogo dt          296  4.48628518274018769E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         296  4.48628518274018769E-004
-     new ntogo dt          297  4.47117984542456427E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         297  4.47117984542456427E-004
-     new ntogo dt          298  4.45617588621173002E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         298  4.45617588621173002E-004
-     new ntogo dt          299  4.44127228793008517E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         299  4.44127228793008517E-004
-     new ntogo dt          300  4.42646804697031818E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         300  4.42646804697031818E-004
-     new ntogo dt          301  4.41176217306011827E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         301  4.41176217306011827E-004
-     new ntogo dt          302  4.39715368904336251E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         302  4.39715368904336251E-004
-     new ntogo dt          303  4.38264163066368138E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         303  4.38264163066368138E-004
-     new ntogo dt          304  4.36822504635228800E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         304  4.36822504635228800E-004
-     new ntogo dt          305  4.35390299701998533E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         305  4.35390299701998533E-004
-     new ntogo dt          306  4.33967455585325325E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         306  4.33967455585325325E-004
-     new ntogo dt          307  4.32553880811431784E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         307  4.32553880811431784E-004
-     new ntogo dt          308  4.31149485094511518E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         308  4.31149485094511518E-004
-     new ntogo dt          309  4.29754179317506663E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         309  4.29754179317506663E-004
-     new ntogo dt          310  4.28367875513256647E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         310  4.28367875513256647E-004
-     new ntogo dt          311  4.26990486846011452E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         311  4.26990486846011452E-004
-     new ntogo dt          312  4.25621927593299856E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         312  4.25621927593299856E-004
-     new ntogo dt          313  4.24262113128145535E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         313  4.24262113128145535E-004
-     new ntogo dt          314  4.22910959901622789E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         314  4.22910959901622789E-004
-     new ntogo dt          315  4.21568385425744637E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         315  4.21568385425744637E-004
-     new ntogo dt          316  4.20234308256675789E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         316  4.20234308256675789E-004
-     new ntogo dt          317  4.18908647978263556E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         317  4.18908647978263556E-004
-     new ntogo dt          318  4.17591325185879072E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         318  4.17591325185879072E-004
-     new ntogo dt          319  4.16282261470562890E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         319  4.16282261470562890E-004
-     new ntogo dt          320  4.14981379403467333E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         320  4.14981379403467333E-004
-     new ntogo dt          321  4.13688602520590496E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         321  4.13688602520590496E-004
-     new ntogo dt          322  4.12403855307793654E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         322  4.12403855307793654E-004
-     new ntogo dt          323  4.11127063186097694E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         323  4.11127063186097694E-004
-     new ntogo dt          324  4.09858152497251729E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         324  4.09858152497251729E-004
-     new ntogo dt          325  4.08597050489567840E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         325  4.08597050489567840E-004
-     new ntogo dt          326  4.07343685304017045E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         326  4.07343685304017045E-004
-     new ntogo dt          327  4.06097985960579685E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         327  4.06097985960579685E-004
-     new ntogo dt          328  4.04859882344846202E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         328  4.04859882344846202E-004
-     new ntogo dt          329  4.03629305194861863E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         329  4.03629305194861863E-004
-     new ntogo dt          330  4.02406186088210768E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         330  4.02406186088210768E-004
-     new ntogo dt          331  4.01190457429333994E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         331  4.01190457429333994E-004
-     new ntogo dt          332  3.99982052437076986E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         332  3.99982052437076986E-004
-     new ntogo dt          333  3.98780905132461116E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         333  3.98780905132461116E-004
-     new ntogo dt          334  3.97586950326675329E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         334  3.97586950326675329E-004
-     new ntogo dt          335  3.96400123609282247E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         335  3.96400123609282247E-004
-     new ntogo dt          336  3.95220361336635581E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         336  3.95220361336635581E-004
-     new ntogo dt          337  3.94047600620503111E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         337  3.94047600620503111E-004
-     new ntogo dt          338  3.92881779316892196E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         338  3.92881779316892196E-004
-     new ntogo dt          339  3.91722836015072438E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         339  3.91722836015072438E-004
-     new ntogo dt          340  3.90570710026792809E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         340  3.90570710026792809E-004
-     new ntogo dt          341  3.89425341375687856E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         341  3.89425341375687856E-004
-     new ntogo dt          342  3.88286670786870062E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         342  3.88286670786870062E-004
-     new ntogo dt          343  3.87154639676704252E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         343  3.87154639676704252E-004
-     new ntogo dt          344  3.86029190142760342E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         344  3.86029190142760342E-004
-     new ntogo dt          345  3.84910264953940758E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         345  3.84910264953940758E-004
-     new ntogo dt          346  3.83797807540779050E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         346  3.83797807540779050E-004
-     new ntogo dt          347  3.82691761985906500E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         347  3.82691761985906500E-004
-     new ntogo dt          348  3.81592073014682613E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         348  3.81592073014682613E-004
-     new ntogo dt          349  3.80498685985987254E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         349  3.80498685985987254E-004
-     new ntogo dt          350  3.79411546883170168E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         350  3.79411546883170168E-004
-     new ntogo dt          351  3.78330602305155422E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         351  3.78330602305155422E-004
-     new ntogo dt          352  3.77255799457697585E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         352  3.77255799457697585E-004
-     new ntogo dt          353  3.76187086144786286E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         353  3.76187086144786286E-004
-     new ntogo dt          354  3.75124410760196481E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         354  3.75124410760196481E-004
-     new ntogo dt          355  3.74067722279181839E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         355  3.74067722279181839E-004
-     new ntogo dt          356  3.73016970250307717E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         356  3.73016970250307717E-004
-     new ntogo dt          357  3.71972104787421723E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         357  3.71972104787421723E-004
-     new ntogo dt          358  3.70933076561758555E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         358  3.70933076561758555E-004
-     new ntogo dt          359  3.69899836794177004E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         359  3.69899836794177004E-004
-     new ntogo dt          360  3.68872337247526524E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         360  3.68872337247526524E-004
-     new ntogo dt          361  3.67850530219140047E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         361  3.67850530219140047E-004
-     new ntogo dt          362  3.66834368533451821E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         362  3.66834368533451821E-004
-     new ntogo dt          363  3.65823805534737042E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         363  3.65823805534737042E-004
-     new ntogo dt          364  3.64818795079971305E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         364  3.64818795079971305E-004
-     new ntogo dt          365  3.63819291531806976E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         365  3.63819291531806976E-004
-     new ntogo dt          366  3.62825249751665471E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         366  3.62825249751665471E-004
-     new ntogo dt          367  3.61836625092941584E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         367  3.61836625092941584E-004
-     new ntogo dt          368  3.60853373394319434E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         368  3.60853373394319434E-004
-     new ntogo dt          369  3.59875450973196618E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         369  3.59875450973196618E-004
-     new ntogo dt          370  3.58902814619214993E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         370  3.58902814619214993E-004
-     new ntogo dt          371  3.57935421587896355E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         371  3.57935421587896355E-004
-     new ntogo dt          372  3.56973229594380521E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         372  3.56973229594380521E-004
-     new ntogo dt          373  3.56016196807264239E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         373  3.56016196807264239E-004
-     new ntogo dt          374  3.55064281842538932E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         374  3.55064281842538932E-004
-     new ntogo dt          375  3.54117443757625465E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         375  3.54117443757625465E-004
-     new ntogo dt          376  3.53175642045504116E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         376  3.53175642045504116E-004
-     new ntogo dt          377  3.52238836628937784E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         377  3.52238836628937784E-004
-     new ntogo dt          378  3.51306987854787189E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         378  3.51306987854787189E-004
-     new ntogo dt          379  3.50380056488415687E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         379  3.50380056488415687E-004
-     new ntogo dt          380  3.49458003708183040E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         380  3.49458003708183040E-004
-     new ntogo dt          381  3.48540791100025054E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         381  3.48540791100025054E-004
-     new ntogo dt          382  3.47628380652119254E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         382  3.47628380652119254E-004
-     new ntogo dt          383  3.46720734749633274E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         383  3.46720734749633274E-004
-     new ntogo dt          384  3.45817816169556147E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         384  3.45817816169556147E-004
-     new ntogo dt          385  3.44919588075609214E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         385  3.44919588075609214E-004
-     new ntogo dt          386  3.44026014013237174E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         386  3.44026014013237174E-004
-     new ntogo dt          387  3.43137057904675823E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         387  3.43137057904675823E-004
-     new ntogo dt          388  3.42252684044096786E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         388  3.42252684044096786E-004
-     new ntogo dt          389  3.41372857092826613E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         389  3.41372857092826613E-004
-     new ntogo dt          390  3.40497542074639885E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         390  3.40497542074639885E-004
-     new ntogo dt          391  3.39626704371124189E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         391  3.39626704371124189E-004
-     new ntogo dt          392  3.38760309717116227E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         392  3.38760309717116227E-004
-     new ntogo dt          393  3.37898324196207528E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         393  3.37898324196207528E-004
-     new ntogo dt          394  3.37040714236318674E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         394  3.37040714236318674E-004
-     new ntogo dt          395  3.36187446605340653E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         395  3.36187446605340653E-004
-     new ntogo dt          396  3.35338488406842280E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         396  3.35338488406842280E-004
-     new ntogo dt          397  3.34493807075842678E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         397  3.34493807075842678E-004
-     new ntogo dt          398  3.33653370374647129E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         398  3.33653370374647129E-004
-     new ntogo dt          399  3.32817146388745752E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         399  3.32817146388745752E-004
-     new ntogo dt          400  3.31985103522773877E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         400  3.31985103522773877E-004
-     new ntogo dt          401  3.31157210496532532E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         401  3.31157210496532532E-004
-     new ntogo dt          402  3.30333436341068566E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         402  3.30333436341068566E-004
-     new ntogo dt          403  3.29513750394812776E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         403  3.29513750394812776E-004
-     new ntogo dt          404  3.28698122299776144E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         404  3.28698122299776144E-004
-     new ntogo dt          405  3.27886521997801373E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         405  3.27886521997801373E-004
-     new ntogo dt          406  3.27078919726870795E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         406  3.27078919726870795E-004
-     new ntogo dt          407  3.26275286017468176E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         407  3.26275286017468176E-004
-     new ntogo dt          408  3.25475591688994008E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         408  3.25475591688994008E-004
-     new ntogo dt          409  3.24679807846233620E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         409  3.24679807846233620E-004
-     new ntogo dt          410  3.23887905875876940E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         410  3.23887905875876940E-004
-     new ntogo dt          411  3.23099857443088947E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         411  3.23099857443088947E-004
-     new ntogo dt          412  3.22315634488129998E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         412  3.22315634488129998E-004
-     new ntogo dt          413  3.21535209223025532E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         413  3.21535209223025532E-004
-     new ntogo dt          414  3.20758554128283929E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         414  3.20758554128283929E-004
-     new ntogo dt          415  3.19985641949661567E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         415  3.19985641949661567E-004
-     new ntogo dt          416  3.19216445694974892E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         416  3.19216445694974892E-004
-     new ntogo dt          417  3.18450938630958184E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         417  3.18450938630958184E-004
-     new ntogo dt          418  3.17689094280166370E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         418  3.17689094280166370E-004
-     new ntogo dt          419  3.16930886417922560E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         419  3.16930886417922560E-004
-     new ntogo dt          420  3.16176289069308464E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         420  3.16176289069308464E-004
-     new ntogo dt          421  3.15425276506198454E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         421  3.15425276506198454E-004
-     new ntogo dt          422  3.14677823244335409E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         422  3.14677823244335409E-004
-     new ntogo dt          423  3.13933904040448097E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         423  3.13933904040448097E-004
-     new ntogo dt          424  3.13193493889409318E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         424  3.13193493889409318E-004
-     new ntogo dt          425  3.12456568021434269E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         425  3.12456568021434269E-004
-     new ntogo dt          426  3.11723101899318217E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         426  3.11723101899318217E-004
-     new ntogo dt          427  3.10993071215713254E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         427  3.10993071215713254E-004
-     new ntogo dt          428  3.10266451890442885E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         428  3.10266451890442885E-004
-     new ntogo dt          429  3.09543220067854416E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         429  3.09543220067854416E-004
-     new ntogo dt          430  3.08823352114208241E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         430  3.08823352114208241E-004
-     new ntogo dt          431  3.08106824615103354E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         431  3.08106824615103354E-004
-     new ntogo dt          432  3.07393614372938797E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         432  3.07393614372938797E-004
-     new ntogo dt          433  3.06683698404410074E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         433  3.06683698404410074E-004
-     new ntogo dt          434  3.05977053938040423E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         434  3.05977053938040423E-004
-     new ntogo dt          435  3.05273658411746079E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         435  3.05273658411746079E-004
-     new ntogo dt          436  3.04573489470434764E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         436  3.04573489470434764E-004
-     new ntogo dt          437  3.03876524963637409E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         437  3.03876524963637409E-004
-     new ntogo dt          438  3.03182742943172517E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         438  3.03182742943172517E-004
-     new ntogo dt          439  3.02492121660841791E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         439  3.02492121660841791E-004
-     new ntogo dt          440  3.01804639566158090E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         440  3.01804639566158090E-004
-     new ntogo dt          441  3.01120275304103289E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         441  3.01120275304103289E-004
-     new ntogo dt          442  3.00439007712917545E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         442  3.00439007712917545E-004
-     new ntogo dt          443  2.99760815821917715E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         443  2.99760815821917715E-004
-     new ntogo dt          444  2.99085678849345864E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         444  2.99085678849345864E-004
-     new ntogo dt          445  2.98413576200246184E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         445  2.98413576200246184E-004
-     new ntogo dt          446  2.97744487464371183E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         446  2.97744487464371183E-004
-     new ntogo dt          447  2.97078392414115353E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         447  2.97078392414115353E-004
-     new ntogo dt          448  2.96415271002476658E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         448  2.96415271002476658E-004
-     new ntogo dt          449  2.95755103361045773E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         449  2.95755103361045773E-004
-     new ntogo dt          450  2.95097869798021230E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         450  2.95097869798021230E-004
-     new ntogo dt          451  2.94443550796251788E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         451  2.94443550796251788E-004
-     new ntogo dt          452  2.93792127011304328E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         452  2.93792127011304328E-004
-     new ntogo dt          453  2.93143579269557501E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         453  2.93143579269557501E-004
-     new ntogo dt          454  2.92497888566320581E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         454  2.92497888566320581E-004
-     new ntogo dt          455  2.91855036063977044E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         455  2.91855036063977044E-004
-     new ntogo dt          456  2.91215003090152533E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         456  2.91215003090152533E-004
-     new ntogo dt          457  2.90577771135907116E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         457  2.90577771135907116E-004
-     new ntogo dt          458  2.89943321853951014E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         458  2.89943321853951014E-004
-     new ntogo dt          459  2.89311637056883532E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         459  2.89311637056883532E-004
-     new ntogo dt          460  2.88682698715455569E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         460  2.88682698715455569E-004
-     new ntogo dt          461  2.88056488956853706E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         461  2.88056488956853706E-004
-     new ntogo dt          462  2.87432990063007715E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         462  2.87432990063007715E-004
-     new ntogo dt          463  2.86812184468919148E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         463  2.86812184468919148E-004
-     new ntogo dt          464  2.86194054761011946E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         464  2.86194054761011946E-004
-     new ntogo dt          465  2.85578583675504395E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         465  2.85578583675504395E-004
-     new ntogo dt          466  2.84965754096801638E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         466  2.84965754096801638E-004
-     new ntogo dt          467  2.84355549055909107E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         467  2.84355549055909107E-004
-     new ntogo dt          468  2.83747951728866553E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         468  2.83747951728866553E-004
-     new ntogo dt          469  2.83142945435201597E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         469  2.83142945435201597E-004
-     new ntogo dt          470  2.82540513636403282E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         470  2.82540513636403282E-004
-     new ntogo dt          471  2.81940639934415193E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         471  2.81940639934415193E-004
-     new ntogo dt          472  2.81343308070147334E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         472  2.81343308070147334E-004
-     new ntogo dt          473  2.80748501922007526E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         473  2.80748501922007526E-004
-     new ntogo dt          474  2.80156205504450526E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         474  2.80156205504450526E-004
-     new ntogo dt          475  2.79566402966546443E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         475  2.79566402966546443E-004
-     new ntogo dt          476  2.78979078590566292E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         476  2.78979078590566292E-004
-     new ntogo dt          477  2.78394216790586084E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         477  2.78394216790586084E-004
-     new ntogo dt          478  2.77811802111107827E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         478  2.77811802111107827E-004
-     new ntogo dt          479  2.77231819225698417E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         479  2.77231819225698417E-004
-     new ntogo dt          480  2.76654252935644906E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         480  2.76654252935644906E-004
-     new ntogo dt          481  2.76079088168626951E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         481  2.76079088168626951E-004
-     new ntogo dt          482  2.75506309977405738E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         482  2.75506309977405738E-004
-     new ntogo dt          483  2.74935903538529121E-004
- ***adjusting timestep for level   4 at t =     0.100000D+01
-     old ntogo dt         483  2.74935903538529121E-004
-     new ntogo dt          484  2.74367854151052809E-004
- **** Too many dt reductions ****
- **** Stopping calculation   ****
- **** ntogo =          484
-   Refinement ratios...  in x: 30  in y: 30  in t:*** for level    4
- Writing checkpoint file at t =    1.0000000000000000     
-Creating checkpoint file at t =  0.100000000E+01  nsteps =     1
-==> runclaw: Will take data from  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid
-==> runclaw: Will write output to  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output
-==> runclaw: Removing all old fort files in  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.567735E+02
+  require       3468 words - either none left or not big  enough space
+ free list: 
 
-==> Running with command:
-    /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/xgeoclaw
+           0             0
+      128643          3108
+      144643          3108
+      160643          3108
+      176643          3108
+      192643          3108
+      208643          3108
+      224643          3108
+      240643          3108
+      256643          3108
+      272643          3108
+      288643          3108
+      304643          3108
+      320643          3108
+      336643          3108
+      352643          3108
+      368643          3108
+    15998131          1870
+    16000002             0
 
-==> runclaw: Finished executing
-
-==> runclaw: Done executing /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/xgeoclaw via clawutil.runclaw.py
-==> runclaw: Output is in  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output
-make[1]: Leaving directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid'
-make plots
-make[1]: Entering directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid'
-rm -f .plots
-python /home/ortegagi/clawpack/visclaw/src/python/visclaw/plotclaw.py _output                _plots                setplot.py      
-Importing setplot.setplot from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid.
-Executed setplot successfully
-Will plot 1 frames numbered: [0]
-Will make 5 figure(s) for each frame, numbered:  [0, 1, 2, 3, 4]
-
------------------------------------
-
-
-Creating html pages for figures...
-
-Directory '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_plots' 
-    already exists, files may be overwritten 
-Now making png files for all figures...
-    Reading  Frame 0 at t = 0  from outdir = /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output
-Frame 0 at time t = 0.0
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1101 in solution dictionary
-*** Lookup key was (1101, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1101
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1102 in solution dictionary
-*** Lookup key was (1102, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1102
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1103 in solution dictionary
-*** Lookup key was (1103, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1103
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1104 in solution dictionary
-*** Lookup key was (1104, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1104
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1105 in solution dictionary
-*** Lookup key was (1105, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1105
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1106 in solution dictionary
-*** Lookup key was (1106, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1106
-Reading gauge data from /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output/fort.gauge
-*** Warning: fort.gauge is empty
-Read in gauges []
-*** Unable to find gauge 1107 in solution dictionary
-*** Lookup key was (1107, '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_output')
-*** Warning: Unable to plot Gauge 1107
-
------------------------------------
-
-Creating latex file...
-Directory '/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_plots' 
-    already exists, files may be overwritten 
-
-Latex file created:  
-  /home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_plots/plots.tex
-
-Use pdflatex to create pdf file
-Created JSAnimation for figure 0
-Created JSAnimation for figure 1
-Created JSAnimation for figure 2
-Created JSAnimation for figure 3
-Created JSAnimation for figure 4
-
---------------------------------------------------------
-
-Point your browser to:
-    file:///home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid/_plots/_PlotIndex.html
-make[1]: Leaving directory `/home/ortegagi/RiemannTests/cascadia_grays_harbor/_run_hybrid'
-Copying driver files used into archive for easy retrieval
+ Expanding storage from     16000000  to     32000000
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.846602E+02
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.112547E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.140434E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.168320E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.196207E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.224094E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.251981E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.279867E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.307754E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.614508E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.335641E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.363528E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.391414E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.419301E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.447188E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.475075E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.502961E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.530848E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.558735E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.586622E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.614508E+03
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t: 11 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 12 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  4 for level    4
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.921263E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.642395E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.670282E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.698169E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.726055E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.753942E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.781829E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.809716E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.837602E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.865489E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.893376E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.921263E+03
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.122802E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.949149E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.977036E+03
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.100492E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.103281E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.106070E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.108858E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.111647E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.114436E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.117224E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.120013E+04
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           4  0.46477914493172162     
+     new ntogo dt            5  0.37182331594535756     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.122802E+04
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           3  0.58097393116465201     
+     new ntogo dt            4  0.43573044837347652     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           4  0.43573044837347652     
+     new ntogo dt            5  0.34858435869878124     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           3  0.58097393116465201     
+     new ntogo dt            4  0.43573044837347652     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           4  0.43573044837347652     
+     new ntogo dt            5  0.34858435869878124     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           2  0.33198510352265831     
+     new ntogo dt            3  0.22132340234854078     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           4  0.46477914493172162     
+     new ntogo dt            5  0.37182331594535756     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           5  0.37182331594535756     
+     new ntogo dt            6  0.30985276328779793     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           6  0.30985276328779793     
+     new ntogo dt            7  0.26558808281811253     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           4  0.46477914493172162     
+     new ntogo dt            5  0.37182331594535756     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           5  0.37182331594535756     
+     new ntogo dt            6  0.30985276328779793     
+ ***adjusting timestep for level   4 at t =     0.921263D+03
+     old ntogo dt           6  0.30985276328779793     
+     new ntogo dt            7  0.26558808281811253     
+ AMRCLAW: level  1  CFL = .750E+00  dt = 0.3068E+03  final t = 0.153477E+04
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.125590E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           3  0.46477912203141408     
+     new ntogo dt            4  0.34858434152363316     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           2  0.37182329762513289     
+     new ntogo dt            3  0.24788219841684622     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.128379E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           3  0.58097390253926762     
+     new ntogo dt            4  0.43573042690445618     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.43573042690445618     
+     new ntogo dt            5  0.34858434152356493     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.34858434152356493     
+     new ntogo dt            6  0.29048695126963747     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.131168E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.133956E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           3  0.58097390253926762     
+     new ntogo dt            4  0.43573042690445618     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.43573042690445618     
+     new ntogo dt            5  0.34858434152356493     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.34858434152356493     
+     new ntogo dt            6  0.29048695126963747     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.136745E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.139534E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.142322E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.25821062335078560     
+     new ntogo dt            9  0.22952055408950400     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22952055408950400     
+     new ntogo dt           10  0.20656849868055360     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.145111E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.29048695126963381     
+     new ntogo dt            8  0.25417608236091382     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.25417608236091382     
+     new ntogo dt            9  0.22593429543192339     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22593429543192339     
+     new ntogo dt           10  0.20334086588873107     
+*** WARNING *** Courant number  =  0.1014D+01  is larger than input cfl_max =   0.1000D+01  on grid *** level   4
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.19365796751308920     
+     new ntogo dt            6  0.16138163959446197     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.16138163959446197     
+     new ntogo dt            7  0.13832711965239600     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.16599254358264789     
+     new ntogo dt           14  0.15413593332674022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          14  0.15413593332674022     
+     new ntogo dt           15  0.14386020443829087     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.20656849868062940     
+     new ntogo dt           10  0.18591164881256644     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.18591164881256644     
+     new ntogo dt           11  0.16901058982960587     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.16901058982960587     
+     new ntogo dt           12  0.15492637401047205     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.15492637401047205     
+     new ntogo dt           13  0.14300896062505111     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.20656849868062940     
+     new ntogo dt           10  0.18591164881256644     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.18591164881256644     
+     new ntogo dt           11  0.16901058982960587     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.16901058982960587     
+     new ntogo dt           12  0.15492637401047205     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.15492637401047205     
+     new ntogo dt           13  0.14300896062505111     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.147900E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.20656849868062940     
+     new ntogo dt           10  0.18591164881256644     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.18591164881256644     
+     new ntogo dt           11  0.16901058982960587     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.16901058982960587     
+     new ntogo dt           12  0.15492637401047205     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.15492637401047205     
+     new ntogo dt           13  0.14300896062505111     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.20656849868062940     
+     new ntogo dt           10  0.18591164881256644     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.18591164881256644     
+     new ntogo dt           11  0.16901058982960587     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.16901058982960587     
+     new ntogo dt           12  0.15492637401047205     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.15492637401047205     
+     new ntogo dt           13  0.14300896062505111     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.28455864614167176     
+     new ntogo dt            8  0.24898881537396278     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24898881537396278     
+     new ntogo dt            9  0.22132339144352248     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22132339144352248     
+     new ntogo dt           10  0.19919105229917022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19919105229917022     
+     new ntogo dt           11  0.18108277481742749     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.18108277481742749     
+     new ntogo dt           12  0.16599254358264184     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16599254358264184     
+     new ntogo dt           13  0.15322388638397710     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.15322388638397710     
+     new ntogo dt           14  0.14227932307083588     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.27665423930440219     
+     new ntogo dt            8  0.24207245939135191     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24207245939135191     
+     new ntogo dt            9  0.21517551945897948     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.21517551945897948     
+     new ntogo dt           10  0.19365796751308154     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19365796751308154     
+     new ntogo dt           11  0.17605269773916501     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.17605269773916501     
+     new ntogo dt           12  0.16138163959423460     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16138163959423460     
+     new ntogo dt           13  0.14896766731775501     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.150688E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.28455864614167176     
+     new ntogo dt            8  0.24898881537396278     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24898881537396278     
+     new ntogo dt            9  0.22132339144352248     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22132339144352248     
+     new ntogo dt           10  0.19919105229917022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19919105229917022     
+     new ntogo dt           11  0.18108277481742749     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.18108277481742749     
+     new ntogo dt           12  0.16599254358264184     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16599254358264184     
+     new ntogo dt           13  0.15322388638397710     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.15322388638397710     
+     new ntogo dt           14  0.14227932307083588     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.21126323728700641     
+     new ntogo dt           11  0.19205748844272172     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.19205748844272172     
+     new ntogo dt           12  0.17605269773916157     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.17605269773916157     
+     new ntogo dt           13  0.16251018252845684     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.16251018252845684     
+     new ntogo dt           14  0.15090231234785279     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          14  0.15090231234785279     
+     new ntogo dt           15  0.14084215819132925     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.27665423930440219     
+     new ntogo dt            8  0.24207245939135191     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24207245939135191     
+     new ntogo dt            9  0.21517551945897948     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.21517551945897948     
+     new ntogo dt           10  0.19365796751308154     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19365796751308154     
+     new ntogo dt           11  0.17605269773916501     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.17605269773916501     
+     new ntogo dt           12  0.16138163959423460     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16138163959423460     
+     new ntogo dt           13  0.14896766731775501     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           4  0.46477912203141408     
+     new ntogo dt            5  0.37182329762513289     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.37182329762513289     
+     new ntogo dt            6  0.30985274802094409     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.30985274802094409     
+     new ntogo dt            7  0.26558806973223781     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.26558806973223781     
+     new ntogo dt            8  0.23238956101570807     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.23238956101570807     
+     new ntogo dt            9  0.20656849868062940     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.20656849868062940     
+     new ntogo dt           10  0.18591164881256644     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.18591164881256644     
+     new ntogo dt           11  0.16901058982960587     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.16901058982960587     
+     new ntogo dt           12  0.15492637401047205     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.15492637401047205     
+     new ntogo dt           13  0.14300896062505111     
+ AMRCLAW: level  2  CFL = .706E+00  dt = 0.2789E+02  final t = 0.153477E+04
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           5  0.38731593502617839     
+     new ntogo dt            6  0.32276327918846920     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.32276327918846920     
+     new ntogo dt            7  0.27665423930440219     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.27665423930440219     
+     new ntogo dt            8  0.24207245939135191     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24207245939135191     
+     new ntogo dt            9  0.21517551945897948     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.21517551945897948     
+     new ntogo dt           10  0.19365796751308154     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19365796751308154     
+     new ntogo dt           11  0.17605269773916501     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.17605269773916501     
+     new ntogo dt           12  0.16138163959423460     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16138163959423460     
+     new ntogo dt           13  0.14896766731775501     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.28455864614167176     
+     new ntogo dt            8  0.24898881537396278     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24898881537396278     
+     new ntogo dt            9  0.22132339144352248     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22132339144352248     
+     new ntogo dt           10  0.19919105229917022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19919105229917022     
+     new ntogo dt           11  0.18108277481742749     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.18108277481742749     
+     new ntogo dt           12  0.16599254358264184     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16599254358264184     
+     new ntogo dt           13  0.15322388638397710     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.15322388638397710     
+     new ntogo dt           14  0.14227932307083588     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.28455864614167176     
+     new ntogo dt            8  0.24898881537396278     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24898881537396278     
+     new ntogo dt            9  0.22132339144352248     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22132339144352248     
+     new ntogo dt           10  0.19919105229917022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19919105229917022     
+     new ntogo dt           11  0.18108277481742749     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.18108277481742749     
+     new ntogo dt           12  0.16599254358264184     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16599254358264184     
+     new ntogo dt           13  0.15322388638397710     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.15322388638397710     
+     new ntogo dt           14  0.14227932307083588     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           6  0.33198508716529579     
+     new ntogo dt            7  0.28455864614167176     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           7  0.28455864614167176     
+     new ntogo dt            8  0.24898881537396278     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           8  0.24898881537396278     
+     new ntogo dt            9  0.22132339144352248     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt           9  0.22132339144352248     
+     new ntogo dt           10  0.19919105229917022     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          10  0.19919105229917022     
+     new ntogo dt           11  0.18108277481742749     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          11  0.18108277481742749     
+     new ntogo dt           12  0.16599254358264184     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          12  0.16599254358264184     
+     new ntogo dt           13  0.15322388638397710     
+ ***adjusting timestep for level   4 at t =     0.122802D+04
+     old ntogo dt          13  0.15322388638397710     
+     new ntogo dt           14  0.14227932307083588     
+there are    8 grids with     9100 cells at level   2
+   Refinement ratios...  in x: 10  in y: 10  in t:  9 for level    2
+   Refinement ratios...  in x: 12  in y: 12  in t: 13 for level    3
+   Refinement ratios...  in x: 30  in y: 30  in t:  6 for level    4
+ AMRCLAW: level  1  CFL = .648E+00  dt = 0.2652E+03  final t = 0.180000E+04
+ AMRCLAW: level  2  CFL = .746E+00  dt = 0.2947E+02  final t = 0.156424E+04
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt           5  0.37781885589627601     
+     new ntogo dt            6  0.31484904658024487     
+*** WARNING *** Courant number  =  0.2754D+01  is larger than input cfl_max =   0.1000D+01  on grid *** level   4
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          12  0.17437793349058892     
+     new ntogo dt           13  0.16096424629901007     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          13  0.16096424629901007     
+     new ntogo dt           14  0.14946680013479505     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          14  0.14946680013479505     
+     new ntogo dt           15  0.13950234679247539     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          15  0.13950234679247539     
+     new ntogo dt           16  0.13078345011794568     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          16  0.13078345011794568     
+     new ntogo dt           17  0.12309030599336064     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          17  0.12309030599336064     
+     new ntogo dt           18  0.11625195566039616     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          18  0.11625195566039616     
+     new ntogo dt           19  0.11013343167827004     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          19  0.11013343167827004     
+     new ntogo dt           20  0.10462676009435654     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          20  0.10462676009435654     
+     new ntogo dt           21  9.96445334231967073E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          21  9.96445334231967073E-002
+     new ntogo dt           22  9.51152364494150387E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          22  9.51152364494150387E-002
+     new ntogo dt           23  9.09797913863969882E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          23  9.09797913863969882E-002
+     new ntogo dt           24  8.71889667452971223E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          24  8.71889667452971223E-002
+     new ntogo dt           25  8.37014080754852341E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          25  8.37014080754852341E-002
+     new ntogo dt           26  8.04821231495050360E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt           6  0.32384473362537941     
+     new ntogo dt            7  0.27758120025032440     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt           7  0.27758120025032440     
+     new ntogo dt            8  0.24288355021903385     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt           8  0.24288355021903385     
+     new ntogo dt            9  0.21589648908358564     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt           9  0.21589648908358564     
+     new ntogo dt           10  0.19430684017522709     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          10  0.19430684017522709     
+     new ntogo dt           11  0.17664258197747917     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          11  0.17664258197747917     
+     new ntogo dt           12  0.16192236681268923     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          12  0.16192236681268923     
+     new ntogo dt           13  0.14946680013479005     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          13  0.14946680013479005     
+     new ntogo dt           14  0.13879060012516220     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          14  0.13879060012516220     
+     new ntogo dt           15  0.12953789345015138     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          15  0.12953789345015138     
+     new ntogo dt           16  0.12144177510951693     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          16  0.12144177510951693     
+     new ntogo dt           17  0.11429814127954534     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          17  0.11429814127954534     
+     new ntogo dt           18  0.10794824454179282     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          18  0.10794824454179282     
+     new ntogo dt           19  0.10226675798696162     
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          19  0.10226675798696162     
+     new ntogo dt           20  9.71534200876135456E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          20  9.71534200876135456E-002
+     new ntogo dt           21  9.25270667501081334E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          21  9.25270667501081334E-002
+     new ntogo dt           22  8.83212909887395869E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          22  8.83212909887395869E-002
+     new ntogo dt           23  8.44812348587943851E-002
+ ***adjusting timestep for level   4 at t =     0.153477D+04
+     old ntogo dt          23  8.44812348587943851E-002
+     new ntogo dt           24  8.09611834063446167E-002
