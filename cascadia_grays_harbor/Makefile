@@ -46,7 +46,12 @@ MODULES = \
  $(GEOLIB)/qinit_module.f90 \
  $(GEOLIB)/refinement_module.f90 \
  $(GEOLIB)/fixedgrids_module.f90 \
- $(GEOLIBMOD)/fgmax_module.f90
+ $(GEOLIBMOD)/fgmax_module.f90 \
+ $(GEOLIB)/surge/holland_storm_module.f90 \
+ $(GEOLIB)/surge/stommel_storm_module.f90 \
+ $(GEOLIB)/surge/constant_storm_module.f90 \
+ $(GEOLIB)/surge/storm_module.f90 \
+ $(GEOLIB)/friction_module.f90
 
 SOURCES = \
   $(GEOLIB)/setprob.f90 \
